@@ -1,0 +1,213 @@
+{
+  "id": "HuwelijkenPartnerschappen",
+  "type": "table",
+  "version": "3.0.0",
+  "auth": "BRP/R",
+  "reasonsNonPublic": [
+    "5.1 1d: Bevat persoonsgegevens"
+  ],
+  "schema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "additionalProperties": false,
+    "identifier": "identificatie",
+    "required": [
+      "schema",
+      "identificatie"
+    ],
+    "display": "identificatie",
+    "properties": {
+      "schema": {
+        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.3.0#/definitions/schema"
+      },
+      "identificatie": {
+        "type": "string",
+        "description": "identificatie van de partner 12345678.P1 (BSN.P(artner)1)"
+      },
+      "vanPersoon": {
+        "type": "string",
+        "description": "BSN van persoon (personentabel) waar deze relatie bij hoort 12345678"
+      },
+      "naarPersoon": {
+        "type": "string",
+        "description": "BSN van de partner 87654321"
+      },
+      "datumSluitingHuwelijkPartnerschap": {
+        "type": "object",
+        "properties": {
+          "datum": {
+            "type": "string",
+            "format": "date",
+            "description": "de datum waarop het huwelijk is voltrokken of het partnerschap is aangegaan."
+          },
+          "jaar": {
+            "type": "integer",
+            "description": "jaar van de datum, als deze bekend is."
+          },
+          "maand": {
+            "type": "integer",
+            "description": "maand van de datum, als deze bekend is."
+          },
+          "dag": {
+            "type": "integer",
+            "description": "dag van de datum, als deze bekend is."
+          }
+        }
+      },
+      "plaatsSluitingHuwelijkPartnerschap": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "code van de PartnerPlaatsSluitingHuwelijkPartnerschap"
+          }
+        },
+        "relation": "brk2:kadastralegemeentecodes",
+        "description": "code, opgenomen in talbel 33, of een buitenlandse plaats"
+      },
+      "landSluitingHuwelijkPartnerschap": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "code van de PartnerLandSluitingHuwelijkPartnerschap"
+          },
+          "omschrijving": {
+            "type": "string",
+            "description": "omschrijving van de PartnerLandSluitingHuwelijkPartnerschap"
+          }
+        },
+        "description": "code, opgenomen in Tabel 34, die het land aangeeft van huwelijk of partnerschap"
+      },
+      "datumOntbindingHuwelijkPartnerschap": {
+        "type": "object",
+        "properties": {
+          "datum": {
+            "type": "string",
+            "format": "date",
+            "description": "De datum waarop het huwelijk/partnerschap is ontbonden"
+          },
+          "jaar": {
+            "type": "integer",
+            "description": "jaar van de datum, als deze bekend is."
+          },
+          "maand": {
+            "type": "integer",
+            "description": "maand van de datum, als deze bekend is."
+          },
+          "dag": {
+            "type": "integer",
+            "description": "dag van de datum, als deze bekend is."
+          }
+        }
+      },
+      "plaatsOntbindingHuwelijkPartnerschap": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "code van de PartnerPlaatsOntbindingHuwelijkPartnerschap"
+          }
+        },
+        "relation": "brk2:kadastralegemeentecodes",
+        "description": "code, opgenomen in Tabel 33, of een buitenlandse plaats van ontbinding"
+      },
+      "landOntbindingHuwelijkPartnerschap": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "code van de PartnerLandOntbindingHuwelijkPartnerschap"
+          },
+          "omschrijving": {
+            "type": "string",
+            "description": "omschrijving van de PartnerLandOntbindingHuwelijkPartnerschap"
+          }
+        },
+        "description": "code, opgenomen in Tabel 34, die het land aangeeft van ontbinding"
+      },
+      "redenOntbindingHuwlijkPartnerschap": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "code van de PartnerRedenOntbindingHuwlijkPartnerschap"
+          },
+          "omschrijving": {
+            "type": "string",
+            "description": "omschrijving van de PartnerRedenOntbindingHuwlijkPartnerschap"
+          }
+        },
+        "description": "code, opgenomen in Tabel 41, die reden ontbinding aangeeft"
+      },
+      "soortVerbintenis": {
+        "type": "string",
+        "description": "Aanduiding huwelijk of geregistreerd partnerschap"
+      },
+      "beginGeldigheid": {
+        "type": "object",
+        "properties": {
+          "datum": {
+            "type": "string",
+            "format": "date",
+            "description": "De datum waarop het geheel van gegevens geldig is geworden"
+          },
+          "jaar": {
+            "type": "integer",
+            "description": "jaar van de datum, als deze bekend is."
+          },
+          "maand": {
+            "type": "integer",
+            "description": "maand van de datum, als deze bekend is."
+          },
+          "dag": {
+            "type": "integer",
+            "description": "dag van de datum, als deze bekend is."
+          }
+        }
+      },
+      "datumOpneming": {
+        "type": "object",
+        "properties": {
+          "datum": {
+            "type": "string",
+            "format": "date",
+            "description": "De datum waarop het geheel van gegevens daadwerkelijk in de GBA is opgenomen"
+          },
+          "jaar": {
+            "type": "integer",
+            "description": "jaar van de datum, als deze bekend is."
+          },
+          "maand": {
+            "type": "integer",
+            "description": "maand van de datum, als deze bekend is."
+          },
+          "dag": {
+            "type": "integer",
+            "description": "dag van de datum, als deze bekend is."
+          }
+        }
+      },
+      "heeftDocumenten": {
+        "type": "object",
+        "properties": {
+          "identificatie": {
+            "type": "string"
+          }
+        },
+        "relation": "brp:documenten",
+        "description": "gemeenteDocument of Akte van de categorie 05 huwelijk/partnerschap"
+      },
+      "heeftOnderzoeken": {
+        "type": "object",
+        "properties": {
+          "identificatie": {
+            "type": "string"
+          }
+        },
+        "relation": "brp:onderzoeken",
+        "description": "onderzoeken  van de categorie 05 huwelijk/partnerschap"
+      }
+    }
+  }
+}

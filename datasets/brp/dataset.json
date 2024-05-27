@@ -3,7 +3,7 @@
   "id": "brp",
   "title": "brp",
   "status": "niet_beschikbaar",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "crs": "EPSG:28992",
   "owner": "Gemeente Amsterdam, DataOffice",
   "publisher": {
@@ -23,93 +23,107 @@
   "tables": [
     {
       "id": "gezagsverhoudingen",
-      "$ref": "gezagsverhoudingen/v2.1.0",
+      "$ref": "gezagsverhoudingen/v3.0.0",
       "activeVersions": {
-        "2.1.0": "gezagsverhoudingen/v2.1.0"
+        "3.0.0": "gezagsverhoudingen/v3.0.0"
       }
     },
     {
       "id": "nationaliteiten",
-      "$ref": "nationaliteiten/v2.1.0",
+      "$ref": "nationaliteiten/v3.0.0",
       "activeVersions": {
-        "2.1.0": "nationaliteiten/v2.1.0"
+        "3.0.0": "nationaliteiten/v3.0.0"
       }
     },
     {
       "id": "verblijfstitels",
-      "$ref": "verblijfstitels/v2.1.0",
+      "$ref": "verblijfstitels/v3.0.0",
       "activeVersions": {
-        "2.1.0": "verblijfstitels/v2.1.0"
+        "3.0.0": "verblijfstitels/v3.0.0"
       }
     },
     {
       "id": "reisdocumenten",
-      "$ref": "reisdocumenten/v2.1.0",
+      "$ref": "reisdocumenten/v3.0.0",
       "activeVersions": {
-        "2.1.0": "reisdocumenten/v2.1.0"
+        "3.0.0": "reisdocumenten/v3.0.0"
       }
     },
     {
       "id": "inschrijvingen",
-      "$ref": "inschrijvingen/v2.1.0",
+      "$ref": "inschrijvingen/v3.0.0",
       "activeVersions": {
-        "2.1.0": "inschrijvingen/v2.1.0"
+        "3.0.0": "inschrijvingen/v3.0.0"
       }
     },
     {
       "id": "overlijdens",
-      "$ref": "overlijdens/v2.1.0",
+      "$ref": "overlijdens/v3.0.0",
       "activeVersions": {
-        "2.1.0": "overlijdens/v2.1.0"
+        "3.0.0": "overlijdens/v3.0.0"
       }
     },
     {
       "id": "ouders",
-      "$ref": "ouders/v2.1.0",
+      "$ref": "ouders/v3.0.0",
       "activeVersions": {
-        "2.1.0": "ouders/v2.1.0"
+        "3.0.0": "ouders/v3.0.0"
       }
     },
     {
       "id": "kinderen",
-      "$ref": "kinderen/v2.1.0",
+      "$ref": "kinderen/v3.0.0",
       "activeVersions": {
-        "2.1.0": "kinderen/v2.1.0"
+        "3.0.0": "kinderen/v3.0.0"
       }
     },
     {
       "id": "huwelijkenpartnerschappen",
-      "$ref": "huwelijkenpartnerschappen/v2.1.0",
+      "$ref": "huwelijkenpartnerschappen/v3.0.0",
       "activeVersions": {
-        "2.1.0": "huwelijkenpartnerschappen/v2.1.0"
+        "3.0.0": "huwelijkenpartnerschappen/v3.0.0"
       }
     },
     {
       "id": "personen",
-      "$ref": "personen/v2.1.0",
+      "$ref": "personen/v3.0.0",
       "activeVersions": {
-        "2.1.0": "personen/v2.1.0"
+        "3.0.0": "personen/v3.0.0"
       }
     },
     {
       "id": "verblijfplaatsen",
-      "$ref": "verblijfplaatsen/v2.1.0",
+      "$ref": "verblijfplaatsen/v3.0.0",
       "activeVersions": {
-        "2.1.0": "verblijfplaatsen/v2.1.0"
+        "3.0.0": "verblijfplaatsen/v3.0.0"
       }
     },
     {
       "id": "verwijzingen",
-      "$ref": "verwijzingen/v2.0.0",
+      "$ref": "verwijzingen/v3.0.0",
       "activeVersions": {
-        "2.0.0": "verwijzingen/v2.0.0"
+        "3.0.0": "verwijzingen/v3.0.0"
       }
     },
     {
       "id": "kiesrechten",
-      "$ref": "kiesrechten/v2.0.0",
+      "$ref": "kiesrechten/v3.0.0",
       "activeVersions": {
-        "2.0.0": "kiesrechten/v2.0.0"
+        "3.0.0": "kiesrechten/v3.0.0"
+      }
+    },
+    {
+      "id": "documenten",
+      "$ref": "documenten/v3.0.0",
+      "activeVersions": {
+        "3.0.0": "documenten/v3.0.0"
+      }
+    },
+    {
+      "id": "onderzoeken",
+      "$ref": "onderzoek/v3.0.0",
+      "activeVersions": {
+        "3.0.0": "onderzoek/v3.0.0"
       }
     }
   ]
