@@ -1,0 +1,52 @@
+{
+  "id": "onderzoeken",
+  "type": "table",
+  "version": "3.0.0",
+  "auth": "BRP/R",
+  "reasonsNonPublic": [
+    "5.1 1d: Bevat persoonsgegevens"
+  ],
+  "schema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "additionalProperties": false,
+    "identifier": "identificatie",
+    "required": [
+      "schema",
+      "identificatie"
+    ],
+    "display": "identificatie",
+    "properties": {
+      "schema": {
+        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.3.0#/definitions/schema"
+      },
+      "identificatie": {
+        "type": "string",
+        "description": "Burgerservicenummer, bedoeld in artikel 1.1 van de Wet algemene bepalingen burgerservicenummer. Te valideren met de 11-proef."
+      },
+      "onderzoek": {
+        "type": "object",
+        "properties": {
+          "aanduidingGegevensInOnderzoek": {
+            "type": "boolean",
+            "description": "Afgeleid gegeven: aanduiding dat in een categorie één of meer gegevens met betrekking tot de onjuistheid of de strijdigheid met de openbare orde zijn of worden onderzocht"
+          },
+          "datumIngangOnderzoek": {
+            "type": "string",
+            "format": "date",
+            "description": "Datum waarop een onderzoek inzake de onjuistheid of de stijdigheid met de openbare orde is gestart"
+          },
+          "datumEindeOnderzoek": {
+            "type": "string",
+            "format": "date",
+            "description": "Datum waarop een onderzoek inzake de onjuistheid of de stijdigheid met de openbare orde is beeindigd"
+          },
+          "indicatieOnjuist": {
+            "type": "boolean",
+            "description": "gegevens over het onjuist of strijdig zijn met de openbare orde van de gegevens in de categorie"
+          }
+        }
+      }
+    }
+  }
+}

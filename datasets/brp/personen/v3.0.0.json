@@ -1,0 +1,377 @@
+{
+  "id": "personen",
+  "type": "table",
+  "version": "3.0.0",
+  "auth": "BRP/R",
+  "reasonsNonPublic": [
+    "5.1 1d: Bevat persoonsgegevens"
+  ],
+  "schema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "additionalProperties": false,
+    "identifier": "identificatie",
+    "required": [
+      "schema",
+      "identificatie"
+    ],
+    "display": "identificatie",
+    "properties": {
+      "schema": {
+        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.3.0#/definitions/schema"
+      },
+      "identificatie": {
+        "type": "string",
+        "description": "Burgerservicenummer, bedoeld in artikel 1.1 van de Wet algemene bepalingen burgerservicenummer. Te valideren met de 11-proef."
+      },
+      "aNummer": {
+        "type": "string",
+        "description": "Administratienummer, bedoeld in artikel 50 van de Wet GBA"
+      },
+      "indicatieIngezeteneAmsterdam": {
+        "type": "boolean",
+        "description": " XXdeze wordt aparte tabel of komt hier bijXX Persoon ingezetene in gemeente Amsterdam (0363) of buiten gemeente Amsterdam"
+      },
+      "geslachtsnaam": {
+        "type": "string",
+        "description": "(geslachts)naam waarvan de eventueel aanwezige voorvoegsels en adellijke titel/predikaat zijn afgesplitst van persoon"
+      },
+      "voorvoegselGeslachtsnaam": {
+        "type": "string",
+        "description": "omschrijving van de persoonVoorvoegselGeslachtsnaam"
+      },
+      "voornamen": {
+        "type": "string",
+        "description": "voornamen van het persoon, gescheiden door spaties. Bijvoorbeeld: Pieter Jan"
+      },
+      "adellijkeTitelPredikaat": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "soort adellijkeTitelPredikaat"
+          },
+          "omschrijving": {
+            "type": "string",
+            "description": "omschrijving adellijkeTitelPredikaat"
+          }
+        },
+        "description": "leesbare naam van de adellijkeTitelPredikaat van het persoon"
+      },
+      "geslachtsnaamEchtgenoot": {
+        "type": "string",
+        "description": "Afgeleid gegeven: onafhankelijk van het veld naamgebruik wordt dit veld gevuld met naam echtgenoot"
+      },
+      "voorvoegselsGeslachtsnaamEchtgenoot": {
+        "type": "string",
+        "description": "Afgeleid gegeven: onafhankelijk van het veld naamgebruik wordt dit veld gevuld met naam echtgenoot"
+      },
+      "geboortePlaats": {
+        "type": "string",
+        "description": "gemeententabel op naam of een buitenlandse plaats of een plaatsbepaling, die aangeeft waar het persoon is geboren"
+      },
+      "geboorteLand": {
+        "type": "string",
+        "description": "code, opgenomen in Tabel 34, Landentabel op naam, die het land aangeeft waar het persoon is geboren"
+      },
+      "geboorteDatum": {
+        "type": "object",
+        "properties": {
+          "datum": {
+            "type": "string",
+            "format": "date",
+            "description": "volledige datum die in de date definitie past. Dit element wordt alleen gevuld als de volledige datum bekend is."
+          },
+          "jaar": {
+            "type": "integer",
+            "description": "jaar van de datum, als deze bekend is."
+          },
+          "maand": {
+            "type": "integer",
+            "description": "maand van de datum, als deze bekend is."
+          },
+          "dag": {
+            "type": "integer",
+            "description": "dag van de datum, als deze bekend is."
+          }
+        }
+      },
+      "geslachtsaanduiding": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "code geslachtsaanduiding"
+          },
+          "omschrijving": {
+            "type": "string",
+            "description": "omschrijving geslachtsaanduiding"
+          }
+        },
+        "description": "Geslacht van de persoon, mogelijke waarden: M (man), V (vrouw), O (onbekend)"
+      },
+      "status": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "code status"
+          },
+          "omschrijving": {
+            "type": "string",
+            "description": "omschrijving status"
+          }
+        },
+        "description": "Afgeleid gegeven: mogelijke waarden:  0 (overleden), 1 (vertrokken), 2 (actueel) van de persoon"
+      },
+      "vorigaNummer": {
+        "type": "string",
+        "description": "Administratienummer dat eerder aan de betrokken persoon is toegekend geweest (artikel 50 van de Wet GBA)"
+      },
+      "volgendeaNummer": {
+        "type": "string",
+        "description": "Administratienummer dat nadien aan de betrokken persoon is toegekend gewest (artikel 50 van de Wet GBA)."
+      },
+      "naamgebruik": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "code naamgebruik"
+          },
+          "omschrijving": {
+            "type": "string",
+            "description": "omschrijving naamgebruik"
+          }
+        },
+        "description": "Schrijfwijze van de achternaam. Mogelijke waarden: E (eigen naam), N (eigen naam -partner), P (partner), V (partner-eigen naam)"
+      },
+      "opgenmaakteNaam": {
+        "type": "string",
+        "description": "Afgeleid gegeven"
+      },
+      "beginGeldigheid": {
+        "type": "object",
+        "properties": {
+          "datum": {
+            "type": "string",
+            "format": "date",
+            "description": "De datum waarop het geheel van gegevens geldig is geworden"
+          },
+          "jaar": {
+            "type": "integer",
+            "description": "jaar van de datum, als deze bekend is."
+          },
+          "maand": {
+            "type": "integer",
+            "description": "maand van de datum, als deze bekend is."
+          },
+          "dag": {
+            "type": "integer",
+            "description": "dag van de datum, als deze bekend is."
+          }
+        }
+      },
+      "eindGeldigheid": {
+        "type": "object",
+        "properties": {
+          "datum": {
+            "type": "string",
+            "format": "date",
+            "description": "De datum waarop de geldigheid van het geheel van gegevens beeindigd is"
+          },
+          "jaar": {
+            "type": "integer",
+            "description": "jaar van de datum, als deze bekend is."
+          },
+          "maand": {
+            "type": "integer",
+            "description": "maand van de datum, als deze bekend is."
+          },
+          "dag": {
+            "type": "integer",
+            "description": "dag van de datum, als deze bekend is."
+          }
+        }
+      },
+      "datumOpneming": {
+        "type": "object",
+        "properties": {
+          "datum": {
+            "type": "string",
+            "format": "date",
+            "description": "De datum waarop het geheel van gegevens daadwerkelijk in de GBA is opgenomen"
+          },
+          "jaar": {
+            "type": "integer",
+            "description": "jaar van de datum, als deze bekend is."
+          },
+          "maand": {
+            "type": "integer",
+            "description": "maand van de datum, als deze bekend is."
+          },
+          "dag": {
+            "type": "integer",
+            "description": "dag van de datum, als deze bekend is."
+          }
+        }
+      },
+      "heeftOuder1":{
+        "type": "object",
+        "properties": {
+          "identificatie": {
+            "type": "string"
+          }
+        },
+        "relation": "brp:ouders",
+        "description": "Categorie 02 relatiegegevens van persoon en ouder1"
+      },
+      "heeftOuder2":{
+        "type": "object",
+        "properties": {
+          "identificatie": {
+            "type": "string"
+          }
+        },
+        "relation": "brp:ouders",
+        "description": "Categorie 03 relatiegegevens van persoon en ouder2"
+      },
+      "heeftNationaliteiten": {
+        "type": "array",
+        "properties": {
+          "identificatie": {
+            "type": "string"
+          }
+        },
+        "relation": "brp:nationaliteiten",
+        "description": "categorie 04 nationaliteiten van persoon"
+      },
+      "heeftHuwelijkPartnerschap": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "identificatie": {
+              "type": "string"
+            }
+          }
+        },
+        "relation": "brp:HuwelijkPartnerschap",
+        "description": "Categorie 05 relatiegegevens van persoon en huwlijk/partner"
+      },
+      "heeftOverlijden": {
+        "type": "object",
+        "properties": {
+          "identificatie": {
+            "type": "string"
+          }
+        },
+        "relation": "brp:overlijden",
+        "description": "Categorie 06 overlijden van persoon"
+      },
+      "heeftInschrijving": {
+        "type": "object",
+        "properties": {
+          "identificatie": {
+            "type": "string"
+          }
+        },
+        "relation": "brp:inschrijving",
+        "description": "Categorie 07 inschrijving van persoon"
+      },
+      "heeftVerblijfplaats": {
+        "type": "object",
+        "properties": {
+          "identificatie": {
+            "type": "string"
+          }
+        },
+        "relation": "brp:verblijfplaatsen",
+        "description": "Categorie 08 verblijfplaats van persoon"
+      },
+      "heeftKinderen": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "identificatie": {
+              "type": "string"
+            }
+          }
+        },
+        "relation": "brp:kinderen",
+        "description": "categorie 09 relatiegegevens van persoon en kinderen"
+      },
+      "heeftVerblijfstitel": {
+        "type": "object",
+        "properties": {
+          "identificatie": {
+            "type": "string"
+          }
+        },
+        "relation": "brp:verblijfstitel",
+        "description": "Categorie 10 verblijfstitel van persoon"
+      },
+      "heeftGezagsverhouding": {
+        "type": "object",
+        "properties": {
+          "identificatie": {
+            "type": "string"
+          }
+        },
+        "relation": "brp:gezagsverhouding",
+        "description": "Categorie 11 gezagsverhouding van persoon"
+      },
+      "heeftReisdocumenten": {
+        "type": "array",
+        "properties": {
+          "identificatie": {
+            "type": "string"
+          }
+        },
+        "relation": "brp:reisdocumenten",
+        "description": "Categorie 12 reisdocumenten van persoon"
+      },
+      "heeftKiesrecht": {
+        "type": "object",
+        "properties": {
+          "identificatie": {
+            "type": "string"
+          }
+        },
+        "relation": "brp:kiesrecht",
+        "description": "Categorie 13 kiesrecht van persoon"
+      },
+      "heeftVerwijzing": {
+        "type": "object",
+        "properties": {
+          "identificatie": {
+            "type": "string"
+          }
+        },
+        "relation": "brp:verwijzing",
+        "description": "Categorie 21 verwijzing van persoon"
+      },
+      "heeftDocumenten": {
+        "type": "object",
+        "properties": {
+          "identificatie": {
+            "type": "string"
+          }
+        },
+        "relation": "brp:documenten",
+        "description": "gemeenteDocument of Akte van de categorie 01 Persoon"
+      },
+      "heeftOnderzoeken": {
+        "type": "object",
+        "properties": {
+          "identificatie": {
+            "type": "string"
+          }
+        },
+        "relation": "brp:onderzoeken",
+        "description": "onderzoeken  van de categorie 01 Persoon"
+      }
+    }
+  }
+}

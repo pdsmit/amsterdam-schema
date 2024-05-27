@@ -1,0 +1,149 @@
+{
+  "id": "kiesrechten",
+  "type": "table",
+  "version": "3.0.0",
+  "auth": "BRP/R",
+  "reasonsNonPublic": [
+    "5.1 1d: Bevat persoonsgegevens"
+  ],
+  "schema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "additionalProperties": false,
+    "identifier": "identificatie",
+    "required": [
+      "schema",
+      "identificatie"
+    ],
+    "display": "identificatie",
+    "properties": {
+      "schema": {
+        "$ref": "https://schemas.data.amsterdam.nl/schema@v1.3.0#/definitions/schema"
+      },
+      "identificatie": {
+        "type": "string",
+        "description": "identificatie, het Burgerservicenummer van de persoon op de persoonslijst (PL)"
+      },
+      "anummer": {
+        "type": "string",
+        "description": "Anummer van de persoon op de persoonslijst (PL)"
+      },
+      "aandEuroKiesrecht": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "code aanduiding Europees kiesrecht"
+          },
+          "omschrijving": {
+            "type": "string",
+            "description": "omschrijving aanduiding Europees kiesrecht"
+          }
+        },
+        "description": "aanduiding Europees kiesrecht"
+      },
+      "datumVerzoekEuroKiesrecht": {
+        "type": "object",
+        "properties": {
+          "datum": {
+            "type": "string",
+            "format": "date",
+            "description": "datum verzoek of mededeling Europees kiesrecht"
+          },
+          "jaar": {
+            "type": "integer",
+            "description": "jaar van de datum, als deze bekend is."
+          },
+          "maand": {
+            "type": "integer",
+            "description": "maand van de datum, als deze bekend is."
+          },
+          "dag": {
+            "type": "integer",
+            "description": "dag van de datum, als deze bekend is."
+          }
+        }
+      },
+      "einddatumVerzoekEuroKiesrecht": {
+        "type": "object",
+        "properties": {
+          "datum": {
+            "type": "string",
+            "format": "date",
+            "description": "einddatum verzoek of mededeling Europees kiesrecht"
+          },
+          "jaar": {
+            "type": "integer",
+            "description": "jaar van de datum, als deze bekend is."
+          },
+          "maand": {
+            "type": "integer",
+            "description": "maand van de datum, als deze bekend is."
+          },
+          "dag": {
+            "type": "integer",
+            "description": "dag van de datum, als deze bekend is."
+          }
+        }
+      },
+      "adresEulidstaatHerkomst": {
+        "type": "string",
+        "description": "adres EU-lidstaat van herkomst 31.40"
+      },
+      "plaatsEulidstaatHerkomst": {
+        "type": "string",
+        "description": "plaats EU-lidstaat van herkomst 31.50"
+      },
+      "landEulidstaatHerkomst": {
+        "type": "string",
+        "description": "land EU-lidstaat van herkomst 31.60"
+      },
+      "aandUitgeslotenKiesrecht": {
+        "type": "string",
+        "description": "aanduiding uitgesloten kiesrecht 38.10"
+      },
+      "einddatumUitsluitingkiesrecht": {
+        "type": "object",
+        "properties": {
+          "datum": {
+            "type": "string",
+            "format": "date",
+            "description": "De datum waarop een uitsluiting kiesrecht niet meer van toepassing is 38.20"
+          },
+          "jaar": {
+            "type": "integer",
+            "description": "jaar van de datum, als deze bekend is."
+          },
+          "maand": {
+            "type": "integer",
+            "description": "maand van de datum, als deze bekend is."
+          },
+          "dag": {
+            "type": "integer",
+            "description": "dag van de datum, als deze bekend is."
+          }
+        }
+      },
+      "heeftDocumenten": {
+        "type": "object",
+        "properties": {
+          "identificatie": {
+            "type": "string"
+          }
+        },
+        "relation": "brp:documenten",
+        "description": "gemeenteDocument of Akte van de categorie 13 kiesrecht"
+      },
+      "heeftOnderzoeken": {
+        "type": "object",
+        "properties": {
+          "identificatie": {
+            "type": "string"
+          }
+        },
+        "relation": "brp:onderzoeken",
+        "description": "onderzoeken  van de categorie 13 kiesrecht"
+      }
+    }
+  }
+}
