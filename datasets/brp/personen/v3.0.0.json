@@ -124,11 +124,11 @@
         },
         "description": "Afgeleid gegeven: mogelijke waarden:  0 (overleden), 1 (vertrokken), 2 (actueel) van de persoon"
       },
-      "vorigaNummer": {
+      "vorigANummer": {
         "type": "string",
         "description": "Administratienummer dat eerder aan de betrokken persoon is toegekend geweest (artikel 50 van de Wet GBA)"
       },
-      "volgendeaNummer": {
+      "volgendeANummer": {
         "type": "string",
         "description": "Administratienummer dat nadien aan de betrokken persoon is toegekend gewest (artikel 50 van de Wet GBA)."
       },
@@ -256,7 +256,7 @@
             }
           }
         },
-        "relation": "brp:HuwelijkPartnerschap",
+        "relation": "brp:huwelijkenpartnerschappen",
         "description": "Categorie 05 relatiegegevens van persoon en huwlijk/partner"
       },
       "heeftOverlijden": {
@@ -266,7 +266,7 @@
             "type": "string"
           }
         },
-        "relation": "brp:overlijden",
+        "relation": "brp:overlijdens",
         "description": "Categorie 06 overlijden van persoon"
       },
       "heeftInschrijving": {
@@ -276,7 +276,7 @@
             "type": "string"
           }
         },
-        "relation": "brp:inschrijving",
+        "relation": "brp:inschrijvingen",
         "description": "Categorie 07 inschrijving van persoon"
       },
       "heeftVerblijfplaats": {
@@ -309,7 +309,7 @@
             "type": "string"
           }
         },
-        "relation": "brp:verblijfstitel",
+        "relation": "brp:verblijfstitels",
         "description": "Categorie 10 verblijfstitel van persoon"
       },
       "heeftGezagsverhouding": {
@@ -319,7 +319,7 @@
             "type": "string"
           }
         },
-        "relation": "brp:gezagsverhouding",
+        "relation": "brp:gezagsverhoudingen",
         "description": "Categorie 11 gezagsverhouding van persoon"
       },
       "heeftReisdocumenten": {
@@ -339,7 +339,7 @@
             "type": "string"
           }
         },
-        "relation": "brp:kiesrecht",
+        "relation": "brp:kiesrechten",
         "description": "Categorie 13 kiesrecht van persoon"
       },
       "heeftVerwijzing": {
@@ -349,7 +349,7 @@
             "type": "string"
           }
         },
-        "relation": "brp:verwijzing",
+        "relation": "brp:verwijzingen",
         "description": "Categorie 21 verwijzing van persoon"
       },
       "heeftDocumenten": {

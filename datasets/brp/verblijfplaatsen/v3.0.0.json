@@ -130,18 +130,18 @@
         "type": "string",
         "description": "geheel of gedeeltelijke omschrijving van de ligging van een object (indien niet in BAG)"
       },
-      "AdresBinnenlandOpgemaakt": {
+      "adresBinnenlandOpgemaakt": {
         "type": "object",
         "properties": {
-          "AdresBinnenlandOpgemaakt1": {
+          "adresBinnenlandOpgemaakt1": {
             "type": "string",
             "description": "afgeleid gegeven: adres binnenland opgemaakt1"
           },
-          "AdresBinnenlandOpgemaakt2": {
+          "adresBinnenlandOpgemaakt2": {
             "type": "string",
             "description": "afgeleid gegeven: adres binnenland opgemaakt2"
           },
-          "AdresBinnenlandOpgemaakt3": {
+          "adresBinnenlandOpgemaakt3": {
             "type": "string",
             "description": "afgeleid gegeven: adres binnenland opgemaakt3"
           }
