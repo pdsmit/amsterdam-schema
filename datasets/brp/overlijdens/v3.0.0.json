@@ -78,12 +78,12 @@
       },
       "beginGeldigheid": {
         "type": "string",
-        "format": "date-time",
+        "format": "date",
         "description": "Complete datum: de datum waarop het geheel van gegevens geldig is geworden."
       },
       "eindGeldigheid": {
         "type": "string",
-        "format": "date-time",
+        "format": "date",
         "description": "Complete datum: de datum waarop het geheel van gegevens ongeldig is geworden."
       },
       "ingangsdatumGeldigheid": {
