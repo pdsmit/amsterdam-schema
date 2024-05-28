@@ -104,7 +104,8 @@
         "description": "Inschrijvng: code uit Tabel 33, Gemeentetabel op naam die aangeeft in welke gemeente de PK (persoonskaart) zich bevindt"
       },
       "persoonskaartGegevensVolledigMeegeconverteerd": {
-        "type": "string"
+        "type": "string",
+        "description": "Indien de gegevens van alle kinderen van de PK zijn geconverteerd, wordt dit gegeven opgenomen. De op te nemen waarde is P. Deze waarde wordt ook opgenomen als er op een PK geen kindgegevens voorkomen."
       },
       "indicatieGeheim": {
         "type": "object",
@@ -125,34 +126,21 @@
         "description": "CATEGORIE 21: Inschrijvng: aanduiding die aangeeft dat gegevens wel of niet mogen worden verstrekt"
       },
       "beginGeldigheid": {
-        "type": "object",
-        "properties": {
-          "datum": {
-            "type": "string",
-            "format": "date",
-            "description": "Gezagsverhouding: De datum waarop het geheel van gegevens geldig is geworden."
-          },
-          "jaar": {
-            "type": "integer",
-            "description": "jaar van de datum, als deze bekend is."
-          },
-          "maand": {
-            "type": "integer",
-            "description": "maand van de datum, als deze bekend is."
-          },
-          "dag": {
-            "type": "integer",
-            "description": "dag van de datum, als deze bekend is."
-          }
-        }
+        "type": "string",
+        "format": "date-time",
+        "description": "Complete datum: de datum waarop het geheel van gegevens geldig is geworden."
       },
       "eindGeldigheid": {
+        "type": "string",
+        "format": "date-time",
+        "description": "Complete datum: de datum waarop het geheel van gegevens ongeldig is geworden."
+      },
+      "ingangsdatumGeldigheid": {
         "type": "object",
         "properties": {
           "datum": {
             "type": "string",
-            "format": "date",
-            "description": "Gezagsverhouding: De datum waarop het geheel van gegevens ongeldig is geworden."
+            "format": "date"
           },
           "jaar": {
             "type": "integer",
@@ -165,7 +153,8 @@
           "dag": {
             "type": "integer",
             "description": "dag van de datum, als deze bekend is."
-          }
+          },
+          "description": "Incomplete datum: De datum waarop het geheel van gegevens geldig is geworden."
         }
       },
       "datumOpneming": {

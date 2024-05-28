@@ -54,12 +54,21 @@
         }
       },
       "beginGeldigheid": {
+        "type": "string",
+        "format": "date-time",
+        "description": "Complete datum: de datum waarop het geheel van gegevens geldig is geworden."
+      },
+      "eindGeldigheid": {
+        "type": "string",
+        "format": "date-time",
+        "description": "Complete datum: de datum waarop het geheel van gegevens ongeldig is geworden."
+      },
+      "ingangsdatumGeldigheid": {
         "type": "object",
         "properties": {
           "datum": {
             "type": "string",
-            "format": "date",
-            "description": "De datum waarop het geheel van gegevens geldig is geworden"
+            "format": "date"
           },
           "jaar": {
             "type": "integer",
@@ -72,7 +81,8 @@
           "dag": {
             "type": "integer",
             "description": "dag van de datum, als deze bekend is."
-          }
+          },
+          "description": "Incomplete datum: De datum waarop het geheel van gegevens geldig is geworden."
         }
       },
       "datumOpneming": {

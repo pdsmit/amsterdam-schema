@@ -247,34 +247,21 @@
         "description": "aanduiding dat gedurende de opschorting van de bijhouding van de PL documenten zijn binnengekomen, die na de beeindiging van de opschorting moeten worden verwerkt"
       },
       "beginGeldigheid": {
-        "type": "object",
-        "properties": {
-          "datum": {
-            "type": "string",
-            "format": "date",
-            "description": "De datum waarop het geheel van gegevens geldig is geworden"
-          },
-          "jaar": {
-            "type": "integer",
-            "description": "jaar van de datum, als deze bekend is."
-          },
-          "maand": {
-            "type": "integer",
-            "description": "maand van de datum, als deze bekend is."
-          },
-          "dag": {
-            "type": "integer",
-            "description": "dag van de datum, als deze bekend is."
-          }
-        }
+        "type": "string",
+        "format": "date-time",
+        "description": "Complete datum: de datum waarop het geheel van gegevens geldig is geworden."
       },
       "eindGeldigheid": {
+        "type": "string",
+        "format": "date-time",
+        "description": "Complete datum: de datum waarop het geheel van gegevens ongeldig is geworden."
+      },
+      "ingangsdatumGeldigheid": {
         "type": "object",
         "properties": {
           "datum": {
             "type": "string",
-            "format": "date",
-            "description": "De datum waarop het geheel van gegevens ongeldig is geworden"
+            "format": "date"
           },
           "jaar": {
             "type": "integer",
@@ -287,7 +274,8 @@
           "dag": {
             "type": "integer",
             "description": "dag van de datum, als deze bekend is."
-          }
+          },
+          "description": "Incomplete datum: De datum waarop het geheel van gegevens geldig is geworden."
         }
       },
       "datumOpneming": {
