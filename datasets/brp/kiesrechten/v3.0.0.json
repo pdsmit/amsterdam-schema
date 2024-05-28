@@ -24,7 +24,7 @@
         "type": "string",
         "description": "identificatie, het Burgerservicenummer van de persoon op de persoonslijst (PL)"
       },
-      "aNummer": {
+      "anummer": {
         "type": "string",
         "description": "Anummer van de persoon op de persoonslijst (PL)"
       },

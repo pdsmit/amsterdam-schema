@@ -124,11 +124,11 @@
         },
         "description": "Afgeleid gegeven: mogelijke waarden:  0 (overleden), 1 (vertrokken), 2 (actueel) van de persoon"
       },
-      "vorigANummer": {
+      "vorigaNummer": {
         "type": "string",
         "description": "Administratienummer dat eerder aan de betrokken persoon is toegekend geweest (artikel 50 van de Wet GBA)"
       },
-      "volgendeANummer": {
+      "volgendaNummer": {
         "type": "string",
         "description": "Administratienummer dat nadien aan de betrokken persoon is toegekend gewest (artikel 50 van de Wet GBA)."
       },
@@ -151,34 +151,21 @@
         "description": "Afgeleid gegeven"
       },
       "beginGeldigheid": {
-        "type": "object",
-        "properties": {
-          "datum": {
-            "type": "string",
-            "format": "date",
-            "description": "De datum waarop het geheel van gegevens geldig is geworden"
-          },
-          "jaar": {
-            "type": "integer",
-            "description": "jaar van de datum, als deze bekend is."
-          },
-          "maand": {
-            "type": "integer",
-            "description": "maand van de datum, als deze bekend is."
-          },
-          "dag": {
-            "type": "integer",
-            "description": "dag van de datum, als deze bekend is."
-          }
-        }
+        "type": "string",
+        "format": "date-time",
+        "description": "Complete datum: de datum waarop het geheel van gegevens geldig is geworden."
       },
       "eindGeldigheid": {
+        "type": "string",
+        "format": "date-time",
+        "description": "Complete datum: de datum waarop het geheel van gegevens ongeldig is geworden."
+      },
+      "ingangsdatumGeldigheid": {
         "type": "object",
         "properties": {
           "datum": {
             "type": "string",
-            "format": "date",
-            "description": "De datum waarop de geldigheid van het geheel van gegevens beeindigd is"
+            "format": "date"
           },
           "jaar": {
             "type": "integer",
@@ -191,7 +178,8 @@
           "dag": {
             "type": "integer",
             "description": "dag van de datum, als deze bekend is."
-          }
+          },
+          "description": "Incomplete datum: De datum waarop het geheel van gegevens geldig is geworden."
         }
       },
       "datumOpneming": {
