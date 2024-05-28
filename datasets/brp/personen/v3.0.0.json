@@ -124,11 +124,11 @@
         },
         "description": "Afgeleid gegeven: mogelijke waarden:  0 (overleden), 1 (vertrokken), 2 (actueel) van de persoon"
       },
-      "vorigaNummer": {
+      "vorigANummer": {
         "type": "string",
         "description": "Administratienummer dat eerder aan de betrokken persoon is toegekend geweest (artikel 50 van de Wet GBA)"
       },
-      "volgendaNummer": {
+      "volgendANummer": {
         "type": "string",
         "description": "Administratienummer dat nadien aan de betrokken persoon is toegekend gewest (artikel 50 van de Wet GBA)."
       },
