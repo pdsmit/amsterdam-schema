@@ -10,27 +10,27 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
     "additionalProperties": false,
-    "identifier": "burgerservicenummer",
+    "identifier": "identificaties",
     "required": [
       "schema",
-      "burgerservicenummer"
+      "identificatie"
     ],
-    "display": "burgerservicenummer",
+    "display": "identificatie",
     "properties": {
       "schema": {
         "$ref": "https://schemas.data.amsterdam.nl/schema@v1.3.0#/definitions/schema"
       },
       "identificatie": {
         "type": "string",
-        "description": "identificatie van het kind bijvoorbeeld 12345678.K1 (BSN.K(ind))"
+        "description": "identificatie van het kind bijvoorbeeld 12345678.K1 (AnummerOuder.K(ind sequence number))"
       },
       "vanPersoon": {
         "type": "string",
-        "description": "BSN van persoon (personentabel) waar deze relatie bij hoort bijvoorbeeld: 12345678"
+        "description": "Anummer van ouder bijvoorbeeld: 12345678"
       },
       "naarPersoon": {
         "type": "string",
-        "description": "BSN van kind bijvoorbeeld: 87654321"
+        "description": "combinatie van identificatie van ouder (AnummmerOuder) en de volgnummer van het kind bijvoorbeeld: 12345678.K1 (AnummerOuder.K(ind sequence number))"
       },
       "registratieBetrekking": {
         "type": "string",
@@ -48,6 +48,7 @@
       },
       "ingangsdatumGeldigheid": {
         "type": "object",
+        "description": "Incomplete datum: De datum waarop het geheel van gegevens geldig is geworden.",
         "properties": {
           "datum": {
             "type": "string",
@@ -64,8 +65,7 @@
           "dag": {
             "type": "integer",
             "description": "dag van de datum, als deze bekend is."
-          },
-          "description": "Incomplete datum: De datum waarop het geheel van gegevens geldig is geworden."
+          }
         }
       },
       "datumOpneming": {

@@ -22,15 +22,15 @@
       },
       "identificatie": {
         "type": "string",
-        "description": "identificatie van de ouder1/2 bijvoorbeeld 12345678.O1 (BSN.O(uder))"
+        "description": "identificatie van de ouder1/2 bijvoorbeeld 12345678.O1 (Anummer.O(uder1/2))"
       },
       "vanPersoon": {
         "type": "string",
-        "description": "BSN van persoon (personentabel) waar deze relatie bij hoort bijvoorbeeld 12345678"
+        "description": "Anummer van persoon (personentabel) waar deze relatie bij hoort bijvoorbeeld 12345678"
       },
       "naarPersoon": {
         "type": "string",
-        "description": "BSN van de ouder1/2 bijvoorbeeld: 87654321"
+        "description": "Anummer van de persoon (personentabel) waar deze relatie bij hoort bijvoorbeeld 12345678.O1 (Anummer.O(uder1/2))"
       },
       "datumFamilierechtelijkeBetrekking": {
         "type": "object",
@@ -65,6 +65,7 @@
       },
       "ingangsdatumGeldigheid": {
         "type": "object",
+        "description": "Incomplete datum: De datum waarop het geheel van gegevens geldig is geworden.",
         "properties": {
           "datum": {
             "type": "string",
@@ -81,8 +82,7 @@
           "dag": {
             "type": "integer",
             "description": "dag van de datum, als deze bekend is."
-          },
-          "description": "Incomplete datum: De datum waarop het geheel van gegevens geldig is geworden."
+          }
         }
       },
       "datumOpneming": {

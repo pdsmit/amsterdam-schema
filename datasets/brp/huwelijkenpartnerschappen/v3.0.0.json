@@ -22,15 +22,15 @@
       },
       "identificatie": {
         "type": "string",
-        "description": "identificatie van de partner 12345678.P1 (BSN.P(artner)1)"
+        "description": "identificatie van de partner 12345678.P1 (Anummer.P(artner)1 of 2)"
       },
       "vanPersoon": {
         "type": "string",
-        "description": "BSN van persoon (personentabel) waar deze relatie bij hoort 12345678"
+        "description": "Anummer van persoon (personentabel) waar deze relatie bij hoort 12345678"
       },
       "naarPersoon": {
         "type": "string",
-        "description": "BSN van de partner 87654321"
+        "description": "Anummer van de persoon (personentabel) waar deze relatie bij hoort bijvoorbeeld 12345678.P1 (Anummer.P(artner) 1 of 2)"
       },
       "datumSluitingHuwelijkPartnerschap": {
         "type": "object",
@@ -156,6 +156,7 @@
       },
       "ingangsdatumGeldigheid": {
         "type": "object",
+        "description": "Incomplete datum: De datum waarop het geheel van gegevens geldig is geworden.",
         "properties": {
           "datum": {
             "type": "string",
@@ -172,8 +173,7 @@
           "dag": {
             "type": "integer",
             "description": "dag van de datum, als deze bekend is."
-          },
-          "description": "Incomplete datum: De datum waarop het geheel van gegevens geldig is geworden."
+          }
         }
       },
       "datumOpneming": {
