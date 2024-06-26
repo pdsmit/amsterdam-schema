@@ -22,6 +22,10 @@
       },
       "identificatie": {
         "type": "string",
+        "description": "Unieke identificatie van deze persoon in deze tabel. Dit kan bijvoorbeeld een BSN zijn, maar ook een samengestelde sleutel op basis van het BSN van een gerelateerde persoon"
+      },
+      "burgerservicenummer": {
+        "type": "string",
         "description": "Burgerservicenummer, bedoeld in artikel 1.1 van de Wet algemene bepalingen burgerservicenummer. Te valideren met de 11-proef."
       },
       "aNummer": {
