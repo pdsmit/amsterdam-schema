@@ -71,11 +71,31 @@
         "description": "Afgeleid gegeven: onafhankelijk van het veld naamgebruik wordt dit veld gevuld met naam echtgenoot"
       },
       "geboortePlaats": {
-        "type": "string",
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "code geboorteplaats"
+          },
+          "omschrijving": {
+            "type": "string",
+            "description": "omschrijving geboorteplaats"
+          }
+        },
         "description": "gemeententabel op naam of een buitenlandse plaats of een plaatsbepaling, die aangeeft waar het persoon is geboren"
       },
       "geboorteLand": {
-        "type": "string",
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "code geboorteland"
+          },
+          "omschrijving": {
+            "type": "string",
+            "description": "omschrijving geboorteland"
+          }
+        },
         "description": "code, opgenomen in Tabel 34, Landentabel op naam, die het land aangeeft waar het persoon is geboren"
       },
       "geboorteDatum": {
