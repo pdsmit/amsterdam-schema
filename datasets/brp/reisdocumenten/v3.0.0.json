@@ -22,7 +22,7 @@
       },
       "identificatie": {
         "type": "string",
-        "description": "identificatie, het Burgerservicenummer van de persoon op de persoonslijst (PL)"
+        "description": "identificatie, het Anummer van de persoon op de persoonslijst (PL)"
       },
       "aNummer": {
         "type": "string",
@@ -71,6 +71,28 @@
       "autoriteitNedReisdocument": {
         "type": "string",
         "description": "autoriteit die het Nederlands reisdocument heeft verstrekt of de bijschrijving heeft verricht"
+      },
+      "datumEindeGeldigheidNlReisdocument": {
+        "type": "object",
+        "properties": {
+          "datum": {
+            "type": "string",
+            "format": "date",
+            "description": "datum waarop een Nederlands reisdocument zijn geldigheid verliest"
+          },
+          "jaar": {
+            "type": "integer",
+            "description": "jaar van de datum, als deze bekend is."
+          },
+          "maand": {
+            "type": "integer",
+            "description": "maand van de datum, als deze bekend is."
+          },
+          "dag": {
+            "type": "integer",
+            "description": "dag van de datum, als deze bekend is."
+          }
+        }
       },
       "datumInhoudingNedReisdocument": {
         "type": "object",
