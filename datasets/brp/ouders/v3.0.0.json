@@ -22,15 +22,15 @@
       },
       "identificatie": {
         "type": "string",
-        "description": "identificatie van de ouder1/2 bijvoorbeeld 12345678.O1 (Anummer.O(uder1/2))"
+        "description": "identificatie, de samenstelling van het Anummer van de persoon, 'O' en een volgnummer. Bijvoorbeeld 1234567890.O1 (Anummer.O(uder1/2))."
       },
       "vanPersoon": {
         "type": "string",
-        "description": "Anummer van persoon (personentabel) waar deze relatie bij hoort bijvoorbeeld 12345678"
+        "description": "Anummer van persoon waar deze relatie bij hoort. Bijvoorbeeld 1234567890."
       },
       "naarPersoon": {
         "type": "string",
-        "description": "Anummer van de persoon (personentabel) waar deze relatie bij hoort bijvoorbeeld 12345678.O1 (Anummer.O(uder1/2))"
+        "description": "Anummer van de persoon waar deze relatie bij hoort. Bijvoorbeeld 1234567890.O1 (Anummer.O(uder1/2))"
       },
       "datumFamilierechtelijkeBetrekking": {
         "type": "object",
