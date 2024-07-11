@@ -22,7 +22,7 @@
       },
       "identificatie": {
         "type": "string",
-        "description": "Unieke identificatie van deze persoon in deze tabel. Dit kan bijvoorbeeld een aNummer zijn, maar ook een samengestelde sleutel op basis van het aNummer van een gerelateerde persoon"
+        "description": "Unieke identificatie, het Anummer van de persoon. Bijvoorbeeld 1234567890."
       },
       "burgerservicenummer": {
         "type": "string",

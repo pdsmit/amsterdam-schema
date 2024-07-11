@@ -22,11 +22,11 @@
       },
       "identificatie": {
         "type": "string",
-        "description": "identificatie, het Burgerservicenummer van de persoon op de persoonslijst (PL)"
+        "description": "identificatie, het Anummer van de persoon. Bijvoorbeeld 1234567890."
       },
       "aNummer": {
         "type": "string",
-        "description": "aNummerummer van de persoon op de persoonslijst (PL)"
+        "description": "aNummerummer van de persoon."
       },
       "adresseertBagVerblijfsobject": {
         "type": "object",

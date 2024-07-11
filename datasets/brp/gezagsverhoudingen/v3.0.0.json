@@ -19,11 +19,11 @@
       },
       "identificatie": {
         "type": "string",
-        "description": "identificatie, het burgerservicenummer"
+        "description": "identificatie, het Anummer van de persoon. Bijvoorbeeld 1234567890."
       },
       "aNummer": {
         "type": "string",
-        "description": "aNummer van de persoon van PL"
+        "description": "aNummer van de persoon."
       },
       "indicatieGezagMinderjarige": {
         "type": "object",

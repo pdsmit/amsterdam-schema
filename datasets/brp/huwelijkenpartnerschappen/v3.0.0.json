@@ -1,5 +1,5 @@
 {
-  "id": "HuwelijkenPartnerschappen",
+  "id": "huwelijkenpartnerschappen",
   "type": "table",
   "version": "3.0.0",
   "auth": "BRP/R",
@@ -22,15 +22,15 @@
       },
       "identificatie": {
         "type": "string",
-        "description": "identificatie van de partner 12345678.P1 (Anummer.P(artner)1 of 2)"
+        "description": "identificatie, de samenstelling van het Anummer van de persoon, 'P' en een volgnummer. Bijvoorbeeld 1234567890.P1 (Anummer.P(artner sequence number)"
       },
       "vanPersoon": {
         "type": "string",
-        "description": "Anummer van persoon (personentabel) waar deze relatie bij hoort 12345678"
+        "description": "Anummer van persoon waar deze relatie bij hoort. Bijvoorbeeld 1234567890."
       },
       "naarPersoon": {
         "type": "string",
-        "description": "Anummer van de persoon (personentabel) waar deze relatie bij hoort bijvoorbeeld 12345678.P1 (Anummer.P(artner) 1 of 2)"
+        "description": "Anummer van de persoon waar deze relatie bij hoort. Bijvoorbeeld 1234567890.P1 (Anummer.P(artner sequence number))."
       },
       "datumSluitingHuwelijkPartnerschap": {
         "type": "object",
