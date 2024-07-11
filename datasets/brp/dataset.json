@@ -121,9 +121,9 @@
     },
     {
       "id": "onderzoeken",
-      "$ref": "onderzoek/v3.0.0",
+      "$ref": "onderzoeken/v3.0.0",
       "activeVersions": {
-        "3.0.0": "onderzoek/v3.0.0"
+        "3.0.0": "onderzoeken/v3.0.0"
       }
     }
   ]
