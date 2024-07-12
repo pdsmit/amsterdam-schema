@@ -26,11 +26,13 @@
       },
       "vanPersoon": {
         "type": "string",
-        "description": "Anummer van de persoon. Bijvoorbeeld: 1234567890."
+        "description": "Anummer van de persoon. Bijvoorbeeld: 1234567890.",
+        "relation": "brp:kinderen"
       },
       "naarPersoon": {
         "type": "string",
-        "description": "combinatie van het Anummmer, 'K' en de volgnummer van het kind bijvoorbeeld: 1234567890.K1 (Anummer.K(ind sequence number))"
+        "description": "combinatie van het Anummmer, 'K' en de volgnummer van het kind bijvoorbeeld: 1234567890.K1 (Anummer.K(ind sequence number))",
+        "relation": "brp:kinderen"
       },
       "registratieBetrekking": {
         "type": "string",
