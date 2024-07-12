@@ -22,15 +22,15 @@
       },
       "identificatie": {
         "type": "string",
-        "description": "identificatie, de samenstelling van het Anummer van de ouder (AnummerOuder), 'K' en een volgnummer. Bijvoorbeeld 12345678.K1 (AnummerOuder.K(ind sequence number))."
+        "description": "identificatie, de samenstelling van het Anummer, 'K' en een volgnummer. Bijvoorbeeld 1234567890.K1 (Anummer.K(ind sequence number))."
       },
       "vanPersoon": {
         "type": "string",
-        "description": "Anummer van ouder. Bijvoorbeeld: 1234567890."
+        "description": "Anummer van de persoon. Bijvoorbeeld: 1234567890."
       },
       "naarPersoon": {
         "type": "string",
-        "description": "combinatie van identificatie van ouder (AnummmerOuder) en de volgnummer van het kind bijvoorbeeld: 1234567890.K1 (AnummerOuder.K(ind sequence number))"
+        "description": "combinatie van het Anummmer, 'K' en de volgnummer van het kind bijvoorbeeld: 1234567890.K1 (Anummer.K(ind sequence number))"
       },
       "registratieBetrekking": {
         "type": "string",
