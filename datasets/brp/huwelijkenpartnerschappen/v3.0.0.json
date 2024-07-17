@@ -126,7 +126,7 @@
         },
         "description": "code, opgenomen in Tabel 34, die het land aangeeft van ontbinding"
       },
-      "redenOntbindingHuwlijkPartnerschap": {
+      "redenOntbindingHuwelijkPartnerschap": {
         "type": "object",
         "properties": {
           "code": {
