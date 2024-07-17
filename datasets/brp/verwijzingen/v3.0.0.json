@@ -129,6 +129,10 @@
           "omschrijving": {
             "type": "string",
             "description": "omschrijving gegevens over het mogen verstrekken van informatie aan derden"
+          },
+          "geheim": {
+            "type": "boolean",
+            "description": "J/N  over het mogen verstrekken van informatie aan derden"
           }
         },
         "description": "aanduiding die aangeeft dat gegevens wel of niet mogen worden verstrekt"
