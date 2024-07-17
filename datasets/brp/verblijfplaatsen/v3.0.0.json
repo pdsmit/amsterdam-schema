@@ -90,10 +90,6 @@
         "type": "string",
         "description": "Woonadres (W) of briefadres (B)"
       },
-      "gemeentedeel": {
-        "type": "string",
-        "description": "geografisch bepaald gebied dat een deel is van het gemeentelijk grondgebied"
-      },
       "datumAanvangAdreshouding": {
         "type": "object",
         "properties": {
