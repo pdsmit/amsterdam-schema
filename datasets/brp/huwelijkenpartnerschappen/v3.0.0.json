@@ -62,7 +62,7 @@
             "description": "code van de PartnerPlaatsSluitingHuwelijkPartnerschap"
           }
         },
-        "relation": "brk2:kadastralegemeentecodes",
+        "relation": "brk2:gemeentes",
         "description": "code, opgenomen in talbel 33, of een buitenlandse plaats"
       },
       "landSluitingHuwelijkPartnerschap": {
@@ -109,7 +109,7 @@
             "description": "code van de PartnerPlaatsOntbindingHuwelijkPartnerschap"
           }
         },
-        "relation": "brk2:kadastralegemeentecodes",
+        "relation": "brk2:gemeentes",
         "description": "code, opgenomen in Tabel 33, of een buitenlandse plaats van ontbinding"
       },
       "landOntbindingHuwelijkPartnerschap": {
