@@ -57,7 +57,7 @@
       "plaatsSluitingHuwelijkPartnerschap": {
         "type": "object",
         "properties": {
-          "code": {
+          "identificatie": {
             "type": "string",
             "description": "code van de PartnerPlaatsSluitingHuwelijkPartnerschap"
           }
@@ -104,7 +104,7 @@
       "plaatsOntbindingHuwelijkPartnerschap": {
         "type": "object",
         "properties": {
-          "code": {
+          "identificatie": {
             "type": "string",
             "description": "code van de PartnerPlaatsOntbindingHuwelijkPartnerschap"
           }
