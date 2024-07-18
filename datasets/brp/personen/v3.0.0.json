@@ -238,7 +238,7 @@
         "relation": "brp:nationaliteiten",
         "description": "categorie 04 nationaliteiten van persoon"
       },
-      "heeftHuwelijkPartnerschap": {
+      "heeftHuwelijkenPartnerschappen": {
         "type": "array",
         "items": {
           "type": "object",
