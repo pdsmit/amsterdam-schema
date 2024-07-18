@@ -59,7 +59,13 @@
         "description": "standplaats (landelijke identificatie) die door de nummeraanduiding wordt aangeduid."
       },
       "gemeenteVanInschrijving": {
-        "type": "string",
+        "type": "object",
+        "properties": {
+          "identificatie": {
+            "type": "string",
+            "description": "code van de gemeente"
+          }
+        },
         "relation": "brk2:gemeentes",
         "provenance": "$.ligtInBrkGemeente.identificatie",
         "description": "De gemeente van inschrijving"
