@@ -198,7 +198,7 @@
           }
         }
       },
-      "heeftDocumenten": {
+      "heeftDocument": {
         "type": "object",
         "properties": {
           "identificatie": {
@@ -208,7 +208,7 @@
         "relation": "brp:documenten",
         "description": "gemeenteDocument of Akte van de categorie 05 huwelijk/partnerschap"
       },
-      "heeftOnderzoeken": {
+      "heeftOnderzoek": {
         "type": "object",
         "properties": {
           "identificatie": {
