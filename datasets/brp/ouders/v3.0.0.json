@@ -107,7 +107,7 @@
           }
         }
       },
-      "heeftDocumenten": {
+      "heeftDocument": {
         "type": "object",
         "properties": {
           "identificatie": {
@@ -117,7 +117,7 @@
         "relation": "brp:documenten",
         "description": "gemeenteDocument of Akte van de categorie 01 Persoon"
       },
-      "heeftOnderzoeken": {
+      "heeftOnderzoek": {
         "type": "object",
         "properties": {
           "identificatie": {

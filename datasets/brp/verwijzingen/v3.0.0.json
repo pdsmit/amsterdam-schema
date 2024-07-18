@@ -137,7 +137,7 @@
         },
         "description": "aanduiding die aangeeft dat gegevens wel of niet mogen worden verstrekt"
       },
-      "heeftOnderzoeken": {
+      "heeftOnderzoek": {
         "type": "object",
         "properties": {
           "identificatie": {

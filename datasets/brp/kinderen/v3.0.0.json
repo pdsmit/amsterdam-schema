@@ -92,7 +92,7 @@
           }
         }
       },
-      "heeftDocumenten": {
+      "heeftDocument": {
         "type": "object",
         "properties": {
           "identificatie": {
@@ -102,7 +102,7 @@
         "relation": "brp:documenten",
         "description": "gemeenteDocument of Akte van de categorie kinderen"
       },
-      "heeftOnderzoeken": {
+      "heeftOnderzoek": {
         "type": "object",
         "properties": {
           "identificatie": {

@@ -344,7 +344,7 @@
         "relation": "brp:verwijzingen",
         "description": "Categorie 21 verwijzing van persoon"
       },
-      "heeftDocumenten": {
+      "heeftDocument": {
         "type": "object",
         "properties": {
           "identificatie": {
@@ -354,7 +354,7 @@
         "relation": "brp:documenten",
         "description": "gemeenteDocument of Akte van de categorie 01 Persoon"
       },
-      "heeftOnderzoeken": {
+      "heeftOnderzoek": {
         "type": "object",
         "properties": {
           "identificatie": {
