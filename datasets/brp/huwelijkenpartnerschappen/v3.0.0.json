@@ -63,6 +63,7 @@
           }
         },
         "relation": "brk2:gemeentes",
+        "provenance": "$.ligtInBrkGemeente.identificatie",
         "description": "code, opgenomen in talbel 33, of een buitenlandse plaats"
       },
       "landSluitingHuwelijkPartnerschap": {
@@ -110,6 +111,7 @@
           }
         },
         "relation": "brk2:gemeentes",
+        "provenance": "$.ligtInBrkGemeente.identificatie",
         "description": "code, opgenomen in Tabel 33, of een buitenlandse plaats van ontbinding"
       },
       "landOntbindingHuwelijkPartnerschap": {
