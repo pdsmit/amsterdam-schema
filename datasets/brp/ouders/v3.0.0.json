@@ -26,11 +26,13 @@
       },
       "vanPersoon": {
         "type": "string",
-        "description": "Anummer van persoon waar deze relatie bij hoort. Bijvoorbeeld 1234567890."
+        "description": "Anummer van persoon waar deze relatie bij hoort. Bijvoorbeeld 1234567890.",
+        "relation": "brp:personen"
       },
       "naarPersoon": {
         "type": "string",
-        "description": "Anummer van de persoon waar deze relatie bij hoort. Bijvoorbeeld 1234567890.O1 (Anummer.O(uder1/2))"
+        "description": "Anummer van de persoon waar deze relatie bij hoort. Bijvoorbeeld 1234567890.O1 (Anummer.O(uder1/2))",
+        "relation": "brp:personen"
       },
       "datumFamilierechtelijkeBetrekking": {
         "type": "object",
