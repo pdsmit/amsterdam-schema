@@ -22,7 +22,7 @@
       },
       "identificatie": {
         "type": "string",
-        "description": "identificatie, de samenstelling van het Anummer van de persoon en een volgnummer. Bijvoorbeeld 1234567890.1 Anummer.(sequence number)."
+        "description": "identificatie, de samenstelling van het Anummer, 'R' en een volgnummer. Bijvoorbeeld 1234567890.R1 (Anummer.R(eisdocument sequence number))."
       },
       "aNummer": {
         "type": "string",
