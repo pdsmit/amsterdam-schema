@@ -187,16 +187,6 @@
           }
         }
       },
-      "heeftDocument": {
-        "type": "object",
-        "properties": {
-          "identificatie": {
-            "type": "string"
-          }
-        },
-        "relation": "brp:documenten",
-        "description": "gemeenteDocument of Akte van de categorie 07 inschrijving"
-      },
       "heeftOnderzoek": {
         "type": "object",
         "properties": {
