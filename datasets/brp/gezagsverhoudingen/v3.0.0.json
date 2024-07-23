@@ -89,7 +89,7 @@
       },
       "beschrijvingDocument": {
         "type": "string",
-        "description": "bschrijving van het document waaraan de gegevens zijn ontleend of waaruit de gegevens zijn afgeleid"
+        "description": "beschrijving van het document waaraan de gegevens zijn ontleend of waaruit de gegevens zijn afgeleid"
       },
       "beginGeldigheid": {
         "type": "string",
