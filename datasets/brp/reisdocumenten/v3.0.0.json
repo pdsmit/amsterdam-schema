@@ -124,6 +124,44 @@
         "type": "integer",
         "description": "lengte van de ingeschrevene in hele centimeters zoals vermeld in het Nederlands reisdocument"
       },
+      "gemeenteOntlening": {
+        "type": "object",
+        "properties": {
+          "identificatie": {
+            "type": "string",
+            "description": "code van de gemeente"
+          }
+        },
+        "relation": "brk2:gemeentes",
+        "provenance": "$.ligtInBrkGemeente.identificatie",
+        "description": "Gemeente waar de gegevens over reisdocument aan het document ontleend zijn"
+      },
+      "datumOntlening": {
+        "type": "object",
+        "properties": {
+          "datum": {
+            "type": "string",
+            "format": "date",
+            "description": "datum waarop de ontlening aan of de afleiding uit het document heeft plaatsgevonden"
+          },
+          "jaar": {
+            "type": "integer",
+            "description": "jaar van de datum, als deze bekend is."
+          },
+          "maand": {
+            "type": "integer",
+            "description": "maand van de datum, als deze bekend is."
+          },
+          "dag": {
+            "type": "integer",
+            "description": "dag van de datum, als deze bekend is."
+          }
+        }
+      },
+      "beschrijvingDocument": {
+        "type": "string",
+        "description": "bschrijving van het reisdocument waaraan de gegevens zijn ontleend of waaruit de gegevens zijn afgeleid"
+      },
       "signaleringNedReisdocument": {
         "type": "boolean",
         "description": "aanduiding dat aan de ingeschrevene geen reisdocument mag worden verstrekt"
