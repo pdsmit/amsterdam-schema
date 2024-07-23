@@ -22,7 +22,7 @@
       },
       "identificatie": {
         "type": "string",
-        "description": "aktenummer of beschrijvingDocument"
+        "description": "identificatie (per objectklass), de samenstelling van het Anummer, 'K' of 'P' of 'O' of 'N' of 'OVL'(en eventueel een volgnummer) en 'D'. Bijvoorbeeld 1234567890.K1.D (Anummer.K(ind sequence number).D)."
       },
       "ligtInBrkGemeente": {
         "type": "object",
