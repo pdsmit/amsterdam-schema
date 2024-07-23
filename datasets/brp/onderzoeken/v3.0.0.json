@@ -22,7 +22,7 @@
       },
       "identificatie": {
         "type": "string",
-        "description": "Burgerservicenummer, bedoeld in artikel 1.1 van de Wet algemene bepalingen burgerservicenummer. Te valideren met de 11-proef."
+        "description": "identificatie per objectklass, de samenstelling van het Anummer, 'K' of 'P' of 'O' of 'N' of 'R' of 'OVL' of 'VG of 'VT' of 'VP' of 'GV' (en eventueel een volgnummer) en 'O'. Bijvoorbeeld 1234567890.K1.O (Anummer.K(ind sequence number).O)."
       },
       "aanduidingGegevensInOnderzoek": {
         "type": "boolean",
