@@ -161,16 +161,6 @@
       "beschrijvingDocument": {
         "type": "string",
         "description": "bschrijving van het kiesrecht document waaraan de gegevens zijn ontleend of waaruit de gegevens zijn afgeleid"
-      },
-      "heeftOnderzoek": {
-        "type": "object",
-        "properties": {
-          "identificatie": {
-            "type": "string"
-          }
-        },
-        "relation": "brp:onderzoeken",
-        "description": "onderzoeken  van de categorie 13 kiesrecht"
       }
     }
   }
