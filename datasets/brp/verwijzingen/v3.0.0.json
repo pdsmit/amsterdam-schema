@@ -133,16 +133,6 @@
           }
         },
         "description": "aanduiding die aangeeft dat gegevens wel of niet mogen worden verstrekt"
-      },
-      "heeftOnderzoek": {
-        "type": "object",
-        "properties": {
-          "identificatie": {
-            "type": "string"
-          }
-        },
-        "relation": "brp:onderzoeken",
-        "description": "onderzoek  van de categorie 21: verwijzing"
       }
     }
   }
