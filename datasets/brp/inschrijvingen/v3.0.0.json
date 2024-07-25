@@ -186,16 +186,6 @@
             "description": "dag van de datum, als deze bekend is."
           }
         }
-      },
-      "heeftOnderzoek": {
-        "type": "object",
-        "properties": {
-          "identificatie": {
-            "type": "string"
-          }
-        },
-        "relation": "brp:onderzoeken",
-        "description": "onderzoeken  van de categorie 07 inschrijving"
       }
     }
   }
