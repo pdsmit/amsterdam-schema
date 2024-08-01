@@ -127,13 +127,15 @@
       "gemeenteOntlening": {
         "type": "object",
         "properties": {
-          "identificatie": {
+          "code": {
             "type": "string",
             "description": "code van de gemeente"
+          },
+          "omschrijving": {
+            "type": "string",
+            "description": "omschrijving van de gemeente"
           }
         },
-        "relation": "brk2:gemeentes",
-        "provenance": "$.ligtInBrkGemeente.identificatie",
         "description": "Gemeente waar de gegevens over kiesrecht aan het document ontleend zijn"
       },
       "datumOntlening": {

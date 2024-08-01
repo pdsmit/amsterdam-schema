@@ -27,23 +27,15 @@
       "ligtInBrkGemeente": {
         "type": "object",
         "properties": {
-          "identificatie": {
-            "type": "string"
-          },
-          "volgnummer": {
-            "type": "integer"
-          },
-          "beginGeldigheid": {
+          "code": {
             "type": "string",
-            "format": "date-time"
+            "description": "code van de gemeente"
           },
-          "eindGeldigheid": {
+          "omschrijving": {
             "type": "string",
-            "format": "date-time"
+            "description": "omschrijving van de gemeente"
           }
         },
-        "relation": "brk2:gemeentes",
-        "provenance": "$.ligtInGemeente.identificatie",
         "description": "gemeente van de Akte of Document"
       },
       "aktenummer": {

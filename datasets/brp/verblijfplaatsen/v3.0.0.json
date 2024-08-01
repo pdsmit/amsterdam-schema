@@ -61,13 +61,15 @@
       "gemeenteVanInschrijving": {
         "type": "object",
         "properties": {
-          "identificatie": {
+          "code": {
             "type": "string",
             "description": "code van de gemeente"
+          },
+          "omschrijving": {
+            "type": "string",
+            "description": "omschrijving van de gemeente"
           }
         },
-        "relation": "brk2:gemeentes",
-        "provenance": "$.ligtInBrkGemeente.identificatie",
         "description": "De gemeente van inschrijving"
       },
       "datumInschrijving": {
