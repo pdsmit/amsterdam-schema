@@ -107,13 +107,15 @@
       "gemeenteUitgeschreven": {
         "type": "object",
         "properties": {
-          "identificatie": {
+          "code": {
             "type": "string",
             "description": "code van de gemeente"
+          },
+          "omschrijving": {
+            "type": "string",
+            "description": "omschrijving van de gemeente"
           }
         },
-        "relation": "brk2:gemeentes",
-        "provenance": "$.ligtInBrkGemeente.identificatie",
         "description": "Gemeententabel (opent in nieuw venster) op naam of een buitenlandse plaats of een plaatsbepaling, die aangeeft de eerste of volgende gemeente van inschrijving van uitgeschreven persoon."
       },
       "indicatieGeheim": {
