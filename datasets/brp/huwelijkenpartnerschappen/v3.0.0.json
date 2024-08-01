@@ -24,11 +24,11 @@
         "type": "string",
         "description": "identificatie, de samenstelling van het Anummer van de persoon, 'P' en een volgnummer. Bijvoorbeeld 1234567890.P1 (Anummer.P(artner sequence number)"
       },
-      "vanPersoon": {
+      "vanBrpPersoon": {
         "type": "string",
         "description": "Anummer van persoon waar deze relatie bij hoort. Bijvoorbeeld 1234567890."
       },
-      "naarPersoon": {
+      "naarBrpPersoon": {
         "type": "string",
         "description": "Anummer van de persoon waar deze relatie bij hoort. Bijvoorbeeld 1234567890.P1 (Anummer.P(artner sequence number))."
       },
@@ -200,7 +200,7 @@
           }
         }
       },
-      "heeftDocument": {
+      "heeftBrpDocument": {
         "type": "object",
         "properties": {
           "identificatie": {
@@ -210,7 +210,7 @@
         "relation": "brp:documenten",
         "description": "gemeenteDocument of Akte van de categorie 05 huwelijk/partnerschap"
       },
-      "heeftOnderzoek": {
+      "heeftBrpOnderzoek": {
         "type": "object",
         "properties": {
           "identificatie": {

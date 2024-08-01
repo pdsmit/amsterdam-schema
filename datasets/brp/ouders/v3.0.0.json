@@ -24,12 +24,12 @@
         "type": "string",
         "description": "identificatie, de samenstelling van het Anummer van de persoon, 'O' en een volgnummer. Bijvoorbeeld 1234567890.O1 (Anummer.O(uder1/2))."
       },
-      "vanPersoon": {
+      "vanBrpPersoon": {
         "type": "string",
         "description": "Anummer van persoon waar deze relatie bij hoort. Bijvoorbeeld 1234567890.",
         "relation": "brp:personen"
       },
-      "naarPersoon": {
+      "naarBrpPersoon": {
         "type": "string",
         "description": "Anummer van de persoon waar deze relatie bij hoort. Bijvoorbeeld 1234567890.O1 (Anummer.O(uder1/2))",
         "relation": "brp:personen"
@@ -109,7 +109,7 @@
           }
         }
       },
-      "heeftDocument": {
+      "heeftBrpDocument": {
         "type": "object",
         "properties": {
           "identificatie": {
@@ -119,7 +119,7 @@
         "relation": "brp:documenten",
         "description": "gemeenteDocument of Akte van de categorie 01 Persoon"
       },
-      "heeftOnderzoek": {
+      "heeftBrpOnderzoek": {
         "type": "object",
         "properties": {
           "identificatie": {

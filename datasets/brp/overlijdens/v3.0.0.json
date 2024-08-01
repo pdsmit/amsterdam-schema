@@ -53,23 +53,15 @@
       "plaatsOverlijden": {
         "type": "object",
         "properties": {
-          "identificatie": {
-            "type": "string"
-          },
-          "volgnummer": {
-            "type": "integer"
-          },
-          "beginGeldigheid": {
+          "code": {
             "type": "string",
-            "format": "date-time"
+            "description": "code van de gemeente"
           },
-          "eindGeldigheid": {
+          "omschrijving": {
             "type": "string",
-            "format": "date-time"
+            "description": "omschrijving van de gemeente"
           }
         },
-        "relation": "brk2:gemeentes",
-        "provenance": "$.ligtInGemeente.identificatie",
         "description": "gemeente van overlijden"
       },
       "landOverlijden": {
@@ -130,7 +122,7 @@
           }
         }
       },
-      "heeftDocument": {
+      "heeftBrpDocument": {
         "type": "object",
         "properties": {
           "identificatie": {
@@ -140,7 +132,7 @@
         "relation": "brp:documenten",
         "description": "gemeenteDocument of Akte van de categorie 01 Persoon"
       },
-      "heeftOnderzoek": {
+      "heeftBrpOnderzoek": {
         "type": "object",
         "properties": {
           "identificatie": {
