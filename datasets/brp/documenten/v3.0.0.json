@@ -38,7 +38,7 @@
         },
         "description": "aanduiding van de akte die is opgenomen in de registers van de burgerlijke stand in Nederland. De eerste drie posities van het aktenummer dienen conform tabel 39, Tabel Akteaanduiding te zijn. De laatste vier posities bevatten een volgnummer van de akte"
       },
-      "gemeenteDocument": {
+      "gemeente": {
         "type": "object",
         "properties": {
           "code": {
