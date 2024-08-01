@@ -128,7 +128,7 @@
           }
         }
       },
-      "heeftDocument": {
+      "heeftBrpDocument": {
         "type": "object",
         "properties": {
           "identificatie": {
@@ -138,7 +138,7 @@
         "relation": "brp:documenten",
         "description": "gemeenteDocument of Akte van de categorie 04 nationaliteit"
       },
-      "heeftOnderzoek": {
+      "heeftBrpOnderzoek": {
         "type": "object",
         "properties": {
           "identificatie": {

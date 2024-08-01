@@ -208,7 +208,7 @@
           }
         }
       },
-      "heeftOuder1":{
+      "heeftBrpOuder1":{
         "type": "object",
         "properties": {
           "identificatie": {
@@ -218,7 +218,7 @@
         "relation": "brp:ouders",
         "description": "Categorie 02 relatiegegevens van persoon en ouder1"
       },
-      "heeftOuder2":{
+      "heeftBrpOuder2":{
         "type": "object",
         "properties": {
           "identificatie": {
@@ -228,7 +228,7 @@
         "relation": "brp:ouders",
         "description": "Categorie 03 relatiegegevens van persoon en ouder2"
       },
-      "heeftNationaliteiten": {
+      "heeftBrpNationaliteiten": {
         "type": "array",
         "properties": {
           "identificatie": {
@@ -238,7 +238,7 @@
         "relation": "brp:nationaliteiten",
         "description": "categorie 04 nationaliteiten van persoon"
       },
-      "heeftHuwelijkenPartnerschappen": {
+      "heeftBrpHuwelijkenPartnerschappen": {
         "type": "array",
         "items": {
           "type": "object",
@@ -251,7 +251,7 @@
         "relation": "brp:huwelijkenpartnerschappen",
         "description": "Categorie 05 relatiegegevens van persoon en huwlijk/partner"
       },
-      "heeftOverlijden": {
+      "heeftBrpOverlijden": {
         "type": "object",
         "properties": {
           "identificatie": {
@@ -261,7 +261,7 @@
         "relation": "brp:overlijdens",
         "description": "Categorie 06 overlijden van persoon"
       },
-      "heeftInschrijving": {
+      "heeftBrpInschrijving": {
         "type": "object",
         "properties": {
           "identificatie": {
@@ -271,7 +271,7 @@
         "relation": "brp:inschrijvingen",
         "description": "Categorie 07 inschrijving van persoon"
       },
-      "heeftVerblijfplaats": {
+      "heeftBrpVerblijfplaats": {
         "type": "object",
         "properties": {
           "identificatie": {
@@ -281,7 +281,7 @@
         "relation": "brp:verblijfplaatsen",
         "description": "Categorie 08 verblijfplaats van persoon"
       },
-      "heeftKinderen": {
+      "heeftBrpKinderen": {
         "type": "array",
         "items": {
           "type": "object",
@@ -294,7 +294,7 @@
         "relation": "brp:kinderen",
         "description": "categorie 09 relatiegegevens van persoon en kinderen"
       },
-      "heeftVerblijfstitel": {
+      "heeftBrpVerblijfstitel": {
         "type": "object",
         "properties": {
           "identificatie": {
@@ -304,7 +304,7 @@
         "relation": "brp:verblijfstitels",
         "description": "Categorie 10 verblijfstitel van persoon"
       },
-      "heeftGezagsverhouding": {
+      "heeftBrpGezagsverhouding": {
         "type": "object",
         "properties": {
           "identificatie": {
@@ -314,7 +314,7 @@
         "relation": "brp:gezagsverhoudingen",
         "description": "Categorie 11 gezagsverhouding van persoon"
       },
-      "heeftReisdocumenten": {
+      "heeftBrpReisdocumenten": {
         "type": "array",
         "properties": {
           "identificatie": {
@@ -324,7 +324,7 @@
         "relation": "brp:reisdocumenten",
         "description": "Categorie 12 reisdocumenten van persoon"
       },
-      "heeftKiesrecht": {
+      "heeftBrpKiesrecht": {
         "type": "object",
         "properties": {
           "identificatie": {
@@ -334,7 +334,7 @@
         "relation": "brp:kiesrechten",
         "description": "Categorie 13 kiesrecht van persoon"
       },
-      "heeftVerwijzing": {
+      "heeftBrpVerwijzing": {
         "type": "object",
         "properties": {
           "identificatie": {
@@ -344,7 +344,7 @@
         "relation": "brp:verwijzingen",
         "description": "Categorie 21 verwijzing van persoon"
       },
-      "heeftDocument": {
+      "heeftBrpDocument": {
         "type": "object",
         "properties": {
           "identificatie": {
@@ -354,7 +354,7 @@
         "relation": "brp:documenten",
         "description": "gemeenteDocument of Akte van de categorie 01 Persoon"
       },
-      "heeftOnderzoek": {
+      "heeftBrpOnderzoek": {
         "type": "object",
         "properties": {
           "identificatie": {

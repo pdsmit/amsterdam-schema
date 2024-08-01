@@ -140,7 +140,7 @@
           }
         }
       },
-      "heeftOnderzoek": {
+      "heeftBrpOnderzoek": {
         "type": "object",
         "properties": {
           "identificatie": {

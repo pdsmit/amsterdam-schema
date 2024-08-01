@@ -24,12 +24,12 @@
         "type": "string",
         "description": "identificatie, de samenstelling van het Anummer, 'K' en een volgnummer. Bijvoorbeeld 1234567890.K1 (Anummer.K(ind sequence number))."
       },
-      "vanPersoon": {
+      "vanBrpPersoon": {
         "type": "string",
         "description": "Anummer van de persoon. Bijvoorbeeld: 1234567890.",
         "relation": "brp:personen"
       },
-      "naarPersoon": {
+      "naarBrpPersoon": {
         "type": "string",
         "description": "combinatie van het Anummmer, 'K' en de volgnummer van het kind bijvoorbeeld: 1234567890.K1 (Anummer.K(ind sequence number))",
         "relation": "brp:personen"
@@ -92,7 +92,7 @@
           }
         }
       },
-      "heeftDocument": {
+      "heeftBrpDocument": {
         "type": "object",
         "properties": {
           "identificatie": {
@@ -102,7 +102,7 @@
         "relation": "brp:documenten",
         "description": "gemeenteDocument of Akte van de categorie kinderen"
       },
-      "heeftOnderzoek": {
+      "heeftBrpOnderzoek": {
         "type": "object",
         "properties": {
           "identificatie": {
