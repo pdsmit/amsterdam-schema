@@ -93,7 +93,7 @@
             "description": "omschrijving van de gemeente"
           }
         },
-        "description": "abel 34, Landentabel"
+        "description": "tabel 34, Landentabel"
       },
       "beginGeldigheid": {
         "type": "string",

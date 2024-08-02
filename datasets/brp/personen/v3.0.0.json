@@ -115,7 +115,7 @@
         },
         "description": "gemeententabel op naam of een buitenlandse plaats of een plaatsbepaling, die aangeeft waar het persoon is geboren"
       },
-      "geboorteland": {
+      "geboorteLand": {
         "type": "object",
         "properties": {
           "code": {
