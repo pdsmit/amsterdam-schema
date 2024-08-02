@@ -2,6 +2,15 @@
   "id": "verblijfstitels",
   "type": "table",
   "version": "3.0.0",
+  "temporal": {
+    "identifier": "volgnummer",
+    "dimensions": {
+      "geldigOp": [
+        "beginGeldigheid",
+        "eindGeldigheid"
+      ]
+    }
+  },
   "auth": "BRP/R",
   "reasonsNonPublic": [
     "5.1 1d: Bevat persoonsgegevens"
@@ -10,10 +19,14 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
     "additionalProperties": false,
-    "identifier": "identificatie",
+    "identifier": [
+      "identificatie",
+      "volgnummer"
+    ],
     "required": [
       "schema",
-      "identificatie"
+      "identificatie",
+      "volgnummer"
     ],
     "display": "identificatie",
     "properties": {
@@ -23,6 +36,10 @@
       "identificatie": {
         "type": "string",
         "description": "identificatie, de samenstelling van het Anummer en 'VT'. Bijvoorbeeld 1234567890.VT)."
+      },
+      "volgnummer": {
+        "type": "integer",
+        "description": "Uniek volgnummer van de toestand van het object."
       },
       "aNummer": {
         "type": "string",
@@ -145,6 +162,17 @@
         "properties": {
           "identificatie": {
             "type": "string"
+          },
+          "volgnummer": {
+            "type": "integer"
+          },
+          "beginGeldigheid": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "eindGeldigheid": {
+            "type": "string",
+            "format": "date-time"
           }
         },
         "relation": "brp:onderzoeken",

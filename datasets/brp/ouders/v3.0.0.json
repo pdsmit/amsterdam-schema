@@ -2,6 +2,15 @@
   "id": "ouders",
   "type": "table",
   "version": "3.0.0",
+  "temporal": {
+    "identifier": "volgnummer",
+    "dimensions": {
+      "geldigOp": [
+        "beginGeldigheid",
+        "eindGeldigheid"
+      ]
+    }
+  },
   "auth": "BRP/R",
   "reasonsNonPublic": [
     "5.1 1d: Bevat persoonsgegevens"
@@ -10,10 +19,14 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
     "additionalProperties": false,
-    "identifier": "identificatie",
+    "identifier": [
+      "identificatie",
+      "volgnummer"
+    ],
     "required": [
       "schema",
-      "identificatie"
+      "identificatie",
+      "volgnummer"
     ],
     "display": "identificatie",
     "properties": {
@@ -24,13 +37,49 @@
         "type": "string",
         "description": "identificatie, de samenstelling van het Anummer van de persoon, 'O' en een volgnummer. Bijvoorbeeld 1234567890.O1 (Anummer.O(uder1/2))."
       },
+      "volgnummer": {
+        "type": "integer",
+        "description": "Uniek volgnummer van de toestand van het object."
+      },
       "vanBrpPersoon": {
-        "type": "string",
+        "type": "object",
+        "properties": {
+          "identificatie": {
+            "type": "string"
+          },
+          "volgnummer": {
+            "type": "integer"
+          },
+          "beginGeldigheid": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "eindGeldigheid": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
         "description": "Anummer van persoon waar deze relatie bij hoort. Bijvoorbeeld 1234567890.",
         "relation": "brp:personen"
       },
       "naarBrpPersoon": {
-        "type": "string",
+        "type": "object",
+        "properties": {
+          "identificatie": {
+            "type": "string"
+          },
+          "volgnummer": {
+            "type": "integer"
+          },
+          "beginGeldigheid": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "eindGeldigheid": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
         "description": "Anummer van de persoon waar deze relatie bij hoort. Bijvoorbeeld 1234567890.O1 (Anummer.O(uder1/2))",
         "relation": "brp:personen"
       },
@@ -114,6 +163,17 @@
         "properties": {
           "identificatie": {
             "type": "string"
+          },
+          "volgnummer": {
+            "type": "integer"
+          },
+          "beginGeldigheid": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "eindGeldigheid": {
+            "type": "string",
+            "format": "date-time"
           }
         },
         "relation": "brp:documenten",
@@ -124,6 +184,17 @@
         "properties": {
           "identificatie": {
             "type": "string"
+          },
+          "volgnummer": {
+            "type": "integer"
+          },
+          "beginGeldigheid": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "eindGeldigheid": {
+            "type": "string",
+            "format": "date-time"
           }
         },
         "relation": "brp:onderzoeken",
