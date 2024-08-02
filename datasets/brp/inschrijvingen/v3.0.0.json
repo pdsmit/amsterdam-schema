@@ -13,7 +13,8 @@
     "identifier": "identificatie",
     "required": [
       "schema",
-      "identificatie"
+      "identificatie",
+      "volgnummer"
     ],
     "display": "identificatie",
     "properties": {
@@ -72,9 +73,18 @@
           }
         }
       },
-      "omschrijvingRedenOpschortingBijhouding": {
-        "type": "string",
-        "description": "Inschrijvng: aanduiding van de reden waarom de bijhouding van de Persoons-Lijst is opgeschort"
+      "redenOpschortingBijhouding": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "code: aanduiding van de reden waarom de bijhouding van de Persoons-Lijst is opgeschort"
+          },
+          "omschrijving": {
+            "type": "string",
+            "description": "omschrijving: aanduiding van de reden waarom de bijhouding van de Persoons-Lijst is opgeschort"
+          }
+        }
       },
       "datumEersteInschrijvingGba": {
         "type": "object",
