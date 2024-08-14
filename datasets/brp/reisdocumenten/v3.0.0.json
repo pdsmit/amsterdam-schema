@@ -117,8 +117,18 @@
         }
       },
       "aanduidingInhoudingNedReisdocument": {
-        "type": "boolean",
-        "description": "aanduiding dat een Nederlands reisdocument is vermist, ingehouden, dan wel ingeleverd"
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "code dat een Nederlands reisdocument is vermist, ingehouden, dan wel ingeleverd"
+          },
+          "omschrijving": {
+            "type": "string",
+            "description": "omschrijving dat een Nederlands reisdocument is vermist, ingehouden, dan wel ingeleverd"
+          }
+        },
+        "description": "codering, opgenomen in Tabel 48, Tabel Nederlands reisdocumenten"
       },
       "lengteHouder": {
         "type": "integer",
