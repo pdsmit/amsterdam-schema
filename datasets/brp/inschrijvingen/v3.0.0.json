@@ -171,9 +171,9 @@
           "dag": {
             "type": "integer",
             "description": "dag van de datum, als deze bekend is."
-          },
-          "description": "Incomplete datum: De datum waarop het geheel van gegevens geldig is geworden."
-        }
+          }
+        },
+        "description": "Incomplete datum: De datum waarop het geheel van gegevens geldig is geworden."
       },
       "datumOpneming": {
         "type": "object",
