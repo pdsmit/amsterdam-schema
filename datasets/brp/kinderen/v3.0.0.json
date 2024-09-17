@@ -83,10 +83,6 @@
         "description": "combinatie van het Anummmer, 'K' en de volgnummer van het kind bijvoorbeeld: 1234567890.K1 (Anummer.K(ind sequence number))",
         "relation": "brp:personen"
       },
-      "registratieBetrekking": {
-        "type": "string",
-        "description": "gegevens over kinderen die op het moment van de geboorte niet meer in leven zijn, kunnen op verzoek van ouder geregistreerd worden op hun persoonslijst"
-      },
       "beginGeldigheid": {
         "type": "string",
         "format": "date",
