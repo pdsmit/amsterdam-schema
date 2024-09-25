@@ -198,7 +198,7 @@
         "type": "string",
         "description": "De door PostNL vastgestelde code bestaande uit 4 cijfers en 2 letters (1234AB)."
       },
-      "naamWoonplaats": {
+      "woonplaatsNaam": {
         "type": "string",
         "description": "Officiële naam woonplaats"
       },
