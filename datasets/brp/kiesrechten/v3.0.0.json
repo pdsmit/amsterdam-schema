@@ -98,9 +98,19 @@
         "type": "string",
         "description": "land EU-lidstaat van herkomst 31.60"
       },
-      "aandUitgeslotenKiesrecht": {
-        "type": "string",
-        "description": "aanduiding uitgesloten kiesrecht 38.10"
+      "aandUitsluitingKiesrecht": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "code aanduiding uitsluiting kiesrecht"
+          },
+          "omschrijving": {
+            "type": "string",
+            "description": "omschrijving aanduiding uitsluiting kiesrecht"
+          }
+        },
+        "description": "aanduiding uitsluiting kiesrecht 38.10"
       },
       "einddatumUitsluitingkiesrecht": {
         "type": "object",
