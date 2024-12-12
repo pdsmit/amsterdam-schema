@@ -64,7 +64,7 @@
           }
         }
       },
-      "einddatumVerzoekEuroKiesrecht": {
+      "einddatumUitsluitingEuroKiesrecht": {
         "type": "object",
         "properties": {
           "datum": {
