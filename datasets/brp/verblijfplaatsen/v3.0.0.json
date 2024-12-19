@@ -35,7 +35,7 @@
       },
       "identificatie": {
         "type": "string",
-        "description": "identificatie, de samenstelling van het Anummer en 'VP'. Bijvoorbeeld 1234567890.VP)."
+        "description": "identificatie, de samenstelling van het afgeleide nummer uit het Anummer van de persoon en de afkorting 'VP'. Bijvoorbeeld 1234567890.VP)."
       },
       "volgnummer": {
         "type": "integer",

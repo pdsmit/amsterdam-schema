@@ -35,7 +35,7 @@
       },
       "identificatie": {
         "type": "string",
-        "description": "identificatie, de samenstelling van het Anummer van de persoon, 'P' en een volgnummer. Bijvoorbeeld 1234567890.P1 (Anummer.P(artner sequence number)"
+        "description": "identificatie, de samenstelling van het afgeleide nummer uit het Anummer van de persoon, de afkorting 'P' en een volgnummer. Bijvoorbeeld 1234567890.P1 (Anummer.P(artner sequence number)"
       },
       "volgnummer": {
         "type": "integer",
@@ -59,7 +59,7 @@
             "format": "date-time"
           }
         },
-        "description": "aNummer van persoon waar deze relatie bij hoort. Bijvoorbeeld 1234567890.",
+        "description": "Anummer van persoon waar deze relatie bij hoort. Bijvoorbeeld 1234567890.",
         "relation": "brp:personen"
       },
       "naarBrpPersoon": {
@@ -80,7 +80,7 @@
             "format": "date-time"
           }
         },
-        "description": "aNummer van de persoon waar deze relatie bij hoort. Bijvoorbeeld 1234567890.P1 (Anummer.P(artner sequence number)).",
+        "description": "Het afgeleide nummer van de persoon waar deze relatie bij hoort. Bijvoorbeeld 1234567890.P1 (Anummer.P(artner sequence number)).",
         "relation": "brp:personen"
       },
       "datumSluitingHuwelijkPartnerschap": {

@@ -35,7 +35,7 @@
       },
       "identificatie": {
         "type": "string",
-        "description": "identificatie, de samenstelling van het Anummer, 'K' en een volgnummer. Bijvoorbeeld 1234567890.K1 (Anummer.K(ind sequence number))."
+        "description": "identificatie, de samenstelling van het afgeleide nummer uit het Anummer van de hoofdpersoon, de afkorting 'K' en een volgnummer. Bijvoorbeeld 1234567890.K1 (Anummer.K(ind sequence number))."
       },
       "volgnummer": {
         "type": "integer",
@@ -80,7 +80,7 @@
             "format": "date-time"
           }
         },
-        "description": "combinatie van het Anummmer, 'K' en de volgnummer van het kind bijvoorbeeld: 1234567890.K1 (Anummer.K(ind sequence number))",
+        "description": "Samenstelling van het afgeleide nummmer van de persoon waar deze relatie bij hoort, de afkorting 'K' en het volgnummer van het kind bijvoorbeeld: 1234567890.K1 (Anummer.K(ind sequence number))",
         "relation": "brp:personen"
       },
       "beginGeldigheid": {

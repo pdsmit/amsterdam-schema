@@ -35,7 +35,7 @@
       },
       "identificatie": {
         "type": "string",
-        "description": "identificatie, de samenstelling van het Anummer van de persoon, 'O' en een volgnummer. Bijvoorbeeld 1234567890.O1 (Anummer.O(uder1/2))."
+        "description": "identificatie, de samenstelling van het afgeleide nummer uit het Anummer van de hoofdpersoon, de afkorting 'O' en een volgnummer. Bijvoorbeeld 1234567890.O1 (Anummer.O(uder1/2))."
       },
       "volgnummer": {
         "type": "integer",
@@ -80,7 +80,7 @@
             "format": "date-time"
           }
         },
-        "description": "Anummer van de persoon waar deze relatie bij hoort. Bijvoorbeeld 1234567890.O1 (Anummer.O(uder1/2))",
+        "description": "Samenstelling van het afgeleide nummer uit het Anummer van de persoon waar deze relatie bij hoort, de afkorting 'O' en ueen volgnummer. Bijvoorbeeld 1234567890.O1 (Anummer.O(uder1/2))",
         "relation": "brp:personen"
       },
       "datumFamilierechtelijkeBetrekking": {

@@ -32,7 +32,7 @@
       },
       "identificatie": {
         "type": "string",
-        "description": "identificatie, de samenstelling van het Anummer en 'GV'. Bijvoorbeeld 1234567890.GV)."
+        "description": "identificatie, de samenstelling van het afgeleide nummer uit het Anummer en de afkorting 'GV'. Bijvoorbeeld 1234567890.GV)."
       },
       "volgnummer": {
         "type": "integer",
