@@ -35,7 +35,7 @@
       },
       "identificatie": {
         "type": "string",
-        "description": "identificatie, de samenstelling van het afgeleide nummer uit het Anummer van de persoon en de afkorting 'VT'. Bijvoorbeeld 1234567890.VT)."
+        "description": "Nummer in combinatie met de afkorting 'VT' en eventueel een volgnummer"
       },
       "volgnummer": {
         "type": "integer",
