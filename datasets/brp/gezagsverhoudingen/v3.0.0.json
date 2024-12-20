@@ -32,15 +32,16 @@
       },
       "identificatie": {
         "type": "string",
-        "description": "identificatie, de samenstelling van het afgeleide nummer uit het Anummer en de afkorting 'GV'. Bijvoorbeeld 1234567890.GV)."
+        "title": "identificatie",
+        "description": "Nummer in combinatie met de afkorting 'GV'"
       },
       "volgnummer": {
         "type": "integer",
-        "description": "Uniek volgnummer van de toestand van het object."
+        "description": "Uniek volgnummer van de toestand van het object"
       },
       "aNummer": {
         "type": "string",
-        "description": "aNummer van de persoon."
+        "description": "aNummer van de persoon"
       },
       "indicatieGezagMinderjarige": {
         "type": "object",
