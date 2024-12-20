@@ -35,7 +35,7 @@
       },
       "identificatie": {
         "type": "string",
-        "description": "identificatie (per objectklass), de samenstelling van het Anummer, 'K' of 'P' of 'O' of 'N' of 'OVL'(en eventueel een volgnummer) en 'D'. Bijvoorbeeld 1234567890.K1.D (Anummer.K(ind sequence number).Document)."
+        "description": "Nummer in combinatie met de afkorting 'K' of 'P' of 'O' of 'N' of 'OVL'(en eventueel een volgnummer) en 'D'"
       },
       "volgnummer": {
         "type": "integer",
