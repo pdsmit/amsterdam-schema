@@ -35,7 +35,7 @@
       },
       "identificatie": {
         "type": "string",
-        "description": "identificatie, de samenstelling van het afgeleide nummer uit het Anummer van de persoon en de afkorting 'OVL'. Bijvoorbeeld 1234567890.OVL)."
+        "description": "Nummer in combinatie met de afkorting 'OVL' en eventueel een volgnummer"
       },
       "volgnummer": {
         "type": "integer",
