@@ -33,7 +33,7 @@
       "identificatie": {
         "type": "string",
         "title": "identificatie",
-        "description": "Nummer in combinatie met de afkorting 'GV'"
+        "description": "Nummer in combinatie met de afkorting 'GV'en eventueel een volgnummer"
       },
       "volgnummer": {
         "type": "integer",
