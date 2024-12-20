@@ -35,7 +35,7 @@
       },
       "identificatie": {
         "type": "string",
-        "description": "identificatie, de samenstelling van het afgeleide nummer uit het Anummer van de persoon, de afkorting 'N' en een volgnummer. Bijvoorbeeld 1234567890.N1 (Anummer.N(ationaliteit sequence number))."
+        "description": "Nummer in combinatie met de afkorting 'N' en een volgnummer"
       },
       "volgnummer": {
         "type": "integer",
