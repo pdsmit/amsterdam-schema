@@ -22,7 +22,7 @@
       },
       "identificatie": {
         "type": "string",
-        "description": "identificatie, de samenstelling van het afgeleide nummer uit het Anummer van de persoon, de afkorting 'R' en een volgnummer. Bijvoorbeeld 1234567890.R1 (Anummer.R(eisdocument sequence number))."
+        "description": "Nummer in combinatie met de afkorting 'R' en eventueel een volgnummer"
       },
       "aNummer": {
         "type": "string",
