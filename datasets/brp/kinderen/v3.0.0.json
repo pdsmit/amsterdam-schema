@@ -35,7 +35,7 @@
       },
       "identificatie": {
         "type": "string",
-        "description": "identificatie, de samenstelling van het afgeleide nummer uit het Anummer van de hoofdpersoon, de afkorting 'K' en een volgnummer. Bijvoorbeeld 1234567890.K1 (Anummer.K(ind sequence number))."
+        "description": "Nummer in combinatie met de afkorting 'K' en een volgnummer"
       },
       "volgnummer": {
         "type": "integer",
