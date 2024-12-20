@@ -35,7 +35,7 @@
       },
       "identificatie": {
         "type": "string",
-        "description": "identificatie, de samenstelling van het afgeleide nummer uit het Anummer van de hoofdpersoon, de afkorting 'O' en een volgnummer. Bijvoorbeeld 1234567890.O1 (Anummer.O(uder1/2))."
+        "description": "Nummer in combinatie met de afkorting 'O' en een volgnummer"
       },
       "volgnummer": {
         "type": "integer",
