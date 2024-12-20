@@ -35,7 +35,7 @@
       },
       "identificatie": {
         "type": "string",
-        "description": "identificatie, de samenstelling van het afgeleide nummer uit het Anummer van de persoon, de afkorting 'P' en een volgnummer. Bijvoorbeeld 1234567890.P1 (Anummer.P(artner sequence number)"
+        "description": "Nummer in combinatie met de afkorting 'P' en een volgnummer"
       },
       "volgnummer": {
         "type": "integer",
