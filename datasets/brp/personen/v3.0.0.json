@@ -35,7 +35,7 @@
       },
       "identificatie": {
         "type": "string",
-        "description": "Unieke identificatie, het Anummer van de persoon. Bijvoorbeeld 1234567890."
+        "description": "Nummer in combinatie met de 'K' of 'P' of 'O' of 'N' of 'R' of 'OVL' of 'VG of 'VT' of 'VP' of 'GV' (en eventueel een volgnummer)"
       },
       "volgnummer": {
         "type": "integer",
