@@ -35,7 +35,7 @@
       },
       "identificatie": {
         "type": "string",
-        "description": "Nummer in combinatie met de afkorting 'VT' en eventueel een volgnummer"
+        "description": "Nummer in combinatie met de afkorting 'VT'"
       },
       "volgnummer": {
         "type": "integer",
