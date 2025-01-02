@@ -23,7 +23,7 @@
       },
       "identificatie": {
         "type": "string",
-        "description": "Nummer in combinatie met de afkorting 'I' en een volgnummer"
+        "description": "Nummer in combinatie met de afkorting 'I'"
       },
       "aNummer": {
         "type": "string",
