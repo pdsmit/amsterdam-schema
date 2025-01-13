@@ -78,7 +78,7 @@
       },
       "indicatieGeldigheidAangevuld": {
         "type": "boolean",
-        "description": "true/false over of de beginGeldigheid datum is aangevuld en complete gemaakt."
+        "description": "Indicatie of de datum in beginGeldigheid aangevuld is omdat deze incompleet was."
       },
       "eindGeldigheid": {
         "type": "string",
