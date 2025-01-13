@@ -206,6 +206,10 @@
         "format": "date",
         "description": "Complete datum: de datum waarop het geheel van gegevens geldig is geworden."
       },
+      "indicatieGeldigheidAangevuld": {
+        "type": "boolean",
+        "description": "true/false over of de beginGeldigheid datum is aangevuld en complete gemaakt."
+      },
       "eindGeldigheid": {
         "type": "string",
         "format": "date",
