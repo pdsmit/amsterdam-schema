@@ -44,38 +44,27 @@
       "beginGeldigheid": {
         "type": "string",
         "format": "date",
-        "description": "Complete datum: de datum waarop het geheel van gegevens geldig is geworden."
+        "description": "complete datum: de datum waarop het geheel van gegevens geldig is geworden."
       },
       "eindGeldigheid": {
         "type": "string",
         "format": "date",
-        "description": "Complete datum: de datum waarop het geheel van gegevens ongeldig is geworden."
+        "description": "complete datum: de datum waarop het geheel van gegevens ongeldig is geworden."
       },
       "aktenummer": {
-        "type": "object",
-        "properties": {
-          "code": {
-            "type": "string",
-            "description": "code van de aktenummer"
-          },
-          "omschrijving": {
-            "type": "string",
-            "description": "beschrijving van de aktenummer"
-          }
-        },
-        "description": "aanduiding van de akte die is opgenomen in de registers van de burgerlijke stand in Nederland. De eerste drie posities van het aktenummer dienen conform tabel 39, Tabel Akteaanduiding te zijn. De laatste vier posities bevatten een volgnummer van de akte"
+        "type": "string",
+        "description": "aanduiding van de akte die is opgenomen in de registers van de burgerlijke stand in Nederland."
       },
       "gemeente": {
         "type": "string",
-        "description": "beschrijving van de gemeente"
+        "description": "een gemeente is een afgebakend gedeelte van het grondgebied van Nederland"
       },
       "datumDocument": {
         "type": "object",
         "properties": {
           "datum": {
             "type": "string",
-            "format": "date",
-            "description": "datum waarop de ontlening aan of de afleiding uit het document heeft plaatsgevonden."
+            "format": "date"
           },
           "jaar": {
             "type": "integer",
@@ -89,11 +78,12 @@
             "type": "integer",
             "description": "dag van de datum, als deze bekend is."
           }
-        }
+        },
+      "description": "de datum waarop de ontlening aan of de afleiding uit het document heeft plaatsgevonden."
       },
       "beschrijvingDocument": {
         "type": "string",
-        "description": "beschrijving van het Document"
+        "description": "beschrijving van het document waaraan de gegevens zijn ontleend of waaruit de gegevens zijn afgeleid."
       }
     }
   }
