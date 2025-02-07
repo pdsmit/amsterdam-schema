@@ -52,8 +52,16 @@
         "description": "aanduiding van de akte die is opgenomen in de registers van de burgerlijke stand in Nederland."
       },
       "gemeente": {
-        "type": "string",
-        "description": "een gemeente is een afgebakend gedeelte van het grondgebied van Nederland"
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "omschrijving": {
+            "type": "string"
+          }
+        },
+        "description": "een gemeente is een afgebakend gedeelte van het grondgebied van Nederland."
       },
       "datumDocument": {
         "type": "object",
