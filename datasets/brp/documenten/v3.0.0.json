@@ -37,10 +37,6 @@
         "type": "string",
         "description": "Nummer in combinatie met de afkorting 'K' of 'P' of 'O' of 'N' of 'OVL'(en eventueel een volgnummer) en 'D'"
       },
-      "volgnummer": {
-        "type": "integer",
-        "description": "Uniek volgnummer van de toestand van het object."
-      },
       "beginGeldigheid": {
         "type": "string",
         "format": "date",
