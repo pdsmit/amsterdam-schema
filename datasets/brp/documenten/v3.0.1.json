@@ -23,19 +23,7 @@
 			"identificatie": {
 				"type": "string",
 				"title": "Object ID",
-				"description": "De unieke aanduiding van een gezagsverhouding. Nummer in combinatie met de afkorting van  de objectklasse(en eventueel een volgnummer) en 'D'"
-			},
-			"beginGeldigheid": {
-				"type": "string",
-				"title": "Object geldigheid datum",
-				"format": "date",
-				"description": "De datum waarop het geheel van gegevens geldig is geworden. Alleen complete datum"
-			},
-			"eindGeldigheid": {
-				"type": "string",
-				"title": "Object eindgeldigheid datum",
-				"format": "date",
-				"description": "De datum waarop het geheel van gegevens ongeldig is geworden. Alleen complete datum"
+				"description": "De unieke aanduiding van een document. Nummer in combinatie met de afkorting van  de objectklasse(en eventueel een volgnummer) en 'D'"
 			},
 			"aktenummer": {
 				"type": "string",
@@ -83,6 +71,12 @@
 				"type": "string",
 				"title": "Document beschrijving",
 				"description": "Beschrijving van het document waaraan de gegevens zijn ontleend of waaruit de gegevens zijn afgeleid"
+			},
+			"beginGeldigheid": {
+				"type": "string",
+				"title": "Object geldigheid datum",
+				"format": "date",
+				"description": "De datum waarop het geheel van gegevens geldig is geworden. Alleen complete datum"
 			}
 		}
 	}
