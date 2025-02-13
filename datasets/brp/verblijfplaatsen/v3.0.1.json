@@ -362,7 +362,7 @@
 						"description": "Dag van de datum, als deze bekend is"
 					}
 				},
-				"title": "Ingeschreven vanuit land",
+				"title": "Vestiging datum",
 				"description": "Datum vestiging Nederland"
 			},
 			"aangeverAdreshouding": {

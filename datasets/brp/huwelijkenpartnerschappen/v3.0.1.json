@@ -108,7 +108,7 @@
 						"description": "Dag van de datum, als deze bekend is"
 					}
 				},
-				"title": "Huwelijk partnerschap datum",
+				"title": "Huwelijk partnerschap sluiting datum",
 				"description": "De datum waarop het huwelijk is voltrokken of het partnerschap is aangegaan"
 			},
 			"plaatsSluitingHuwelijkPartnerschap": {
@@ -123,7 +123,7 @@
 						"description": "Omschrijving van de plaatsSluitingHuwelijkPartnerschap"
 					},
 					"relation": "brk2:kadastralegemeentecodes",
-					"title": "Huwelijk partnerschap plaats sluiting",
+					"title": "Huwelijk partnerschap sluiting plaats",
 					"description": "Code, opgenomen in Tabel 33, of een buitenlandse plaats of een plaatsbepaling, die aangeeft waar het huwelijk is voltrokken of het partnerschap is aangegaan"
 				}
 			},
@@ -139,7 +139,7 @@
 						"description": "Code van de landSluitingHuwelijkPartnerschap"
 					}
 				},
-				"title": "Huwelijk partnerschap land sluiting",
+				"title": "Huwelijk partnerschap sluiting land",
 				"description": "Code, opgenomen in Tabel 34, die het land aangeeft waar het huwelijk is voltrokken of het partnerschap is aangegaan"
 			},
 			"datumOntbindingHuwelijkPartnerschap": {
