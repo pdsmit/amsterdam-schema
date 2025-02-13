@@ -106,7 +106,7 @@
 					}
 				},
 				"title": "Burgerlijke staat",
-				"description": "Afgeleid gegeven"
+				"description": "Afgeleid gegeven van categorie 05 (huwelijk/partnerschap)"
 			},
 			"geslachtsnaamEchtgenoot": {
 				"type": "string",
@@ -228,7 +228,7 @@
 			"opgemaakteNaam": {
 				"type": "string",
 				"title": "Naam opgemaakt",
-				"description": "Samengesteld uit afgeleide gegevens"
+				"description": "Samengestelde naam uit afgeleide gegevens"
 			},
 			"beginGeldigheid": {
 				"type": "string",

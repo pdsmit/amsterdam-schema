@@ -184,42 +184,42 @@
 			},
 			"straatnaam": {
 				"type": "string",
-				"title": "Adres straatnaam",
+				"title": "Verblijfplaats straatnaam",
 				"description": "De officiële straatnaam zoals door het gemeentebestuur is vastgesteld dan wel een kopie van de inhoud van element 11.15 Naam openbare ruimte, indien noodzakelijk afgekort volgens de NEN-5825 [2002] norm"
 			},
 			"naamOpenbareruimte": {
 				"type": "string",
-				"title": "Adres openbare ruimte naam",
+				"title": "Verblijfplaats openbare ruimte naam",
 				"description": "Officiële naam de openbare ruimte"
 			},
 			"huisnummer": {
 				"type": "integer",
-				"title": "Adres huisnummer",
+				"title": "Verblijfplaats huisnummer",
 				"description": "Een door het bevoegde gemeentelijke orgaan ten aanzien van een adresseerbaar object toegekende nummering"
 			},
 			"huisletter": {
 				"type": "string",
-				"title": "Adres huisletter",
+				"title": "Verblijfplaats huisletter",
 				"description": "Een door het bevoegde gemeentelijke orgaan ten aanzien van een adresseerbaar object toegekende toevoeging aan een huisnummer in de vorm van een alfanumeriek teken"
 			},
 			"huisnummertoevoeging": {
 				"type": "string",
-				"title": "Adres huisnummertoevoeging",
+				"title": "Verblijfplaats huisnummertoevoeging",
 				"description": "Een door het bevoegde gemeentelijke orgaan ten aanzien van een adresseerbaar object toegekende nadere toevoeging aan een huisnummer of een combinatie van huisnummer en huisletter"
 			},
 			"aanduidingBijHuisnummer": {
 				"type": "string",
-				"title": "Adres aanduiding",
+				"title": "Verblijfplaats aanduiding",
 				"description": "Vervallen per 01-01-2024: De aanduiding die wordt gebruikt voor adressen die niet zijn voorzien van de gebruikelijke straatnaam en huisnummeraanduidingen"
 			},
 			"postcode": {
 				"type": "string",
-				"title": "Adres postcode",
+				"title": "Verblijfplaats postcode",
 				"description": "De door PostNL vastgestelde code bestaande uit 4 cijfers en 2 letters (1234AB)"
 			},
 			"woonplaatsNaam": {
 				"type": "string",
-				"title": "Adres woonplaats",
+				"title": "Verblijfplaats woonplaats",
 				"description": "Officiële naam woonplaats"
 			},
 			"heeftBagHoofdadres": {
@@ -241,7 +241,7 @@
 					}
 				},
 				"relation": "bag:nummeraanduidingen",
-				"title": "Adres hoofdadres",
+				"title": "Verblijfplaats hoofdadres",
 				"description": "Hoofddadres (Verblijfsplaats) dat de persoon heeft"
 			},
 			"locatiebeschrijving": {
