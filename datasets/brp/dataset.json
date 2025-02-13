@@ -23,107 +23,107 @@
   "tables": [
     {
       "id": "gezagsverhoudingen",
-      "$ref": "gezagsverhoudingen/v3.0.0",
+      "$ref": "gezagsverhoudingen/v3.0.1",
       "activeVersions": {
-        "3.0.0": "gezagsverhoudingen/v3.0.0"
+        "3.0.1": "gezagsverhoudingen/v3.0.1"
       }
     },
     {
       "id": "nationaliteiten",
-      "$ref": "nationaliteiten/v3.0.0",
+      "$ref": "nationaliteiten/v3.0.1",
       "activeVersions": {
-        "3.0.0": "nationaliteiten/v3.0.0"
+        "3.0.1": "nationaliteiten/v3.0.1"
       }
     },
     {
       "id": "verblijfstitels",
-      "$ref": "verblijfstitels/v3.0.0",
+      "$ref": "verblijfstitels/v3.0.1",
       "activeVersions": {
-        "3.0.0": "verblijfstitels/v3.0.0"
+        "3.0.1": "verblijfstitels/v3.0.1"
       }
     },
     {
       "id": "reisdocumenten",
-      "$ref": "reisdocumenten/v3.0.0",
+      "$ref": "reisdocumenten/v3.0.1",
       "activeVersions": {
-        "3.0.0": "reisdocumenten/v3.0.0"
+        "3.0.1": "reisdocumenten/v3.0.1"
       }
     },
     {
       "id": "inschrijvingen",
-      "$ref": "inschrijvingen/v3.0.0",
+      "$ref": "inschrijvingen/v3.1.0",
       "activeVersions": {
-        "3.0.0": "inschrijvingen/v3.0.0"
+        "3.1.0": "inschrijvingen/v3.1.0"
       }
     },
     {
       "id": "overlijdens",
-      "$ref": "overlijdens/v3.0.0",
+      "$ref": "overlijdens/v3.0.1",
       "activeVersions": {
-        "3.0.0": "overlijdens/v3.0.0"
+        "3.0.1": "overlijdens/v3.0.1"
       }
     },
     {
       "id": "ouders",
-      "$ref": "ouders/v3.0.0",
+      "$ref": "ouders/v3.0.1",
       "activeVersions": {
-        "3.0.0": "ouders/v3.0.0"
+        "3.0.1": "ouders/v3.0.1"
       }
     },
     {
       "id": "kinderen",
-      "$ref": "kinderen/v3.0.0",
+      "$ref": "kinderen/v3.0.1",
       "activeVersions": {
-        "3.0.0": "kinderen/v3.0.0"
+        "3.0.1": "kinderen/v3.0.1"
       }
     },
     {
       "id": "huwelijkenpartnerschappen",
-      "$ref": "huwelijkenpartnerschappen/v3.0.0",
+      "$ref": "huwelijkenpartnerschappen/v3.0.1",
       "activeVersions": {
-        "3.0.0": "huwelijkenpartnerschappen/v3.0.0"
+        "3.0.1": "huwelijkenpartnerschappen/v3.0.1"
       }
     },
     {
       "id": "personen",
-      "$ref": "personen/v3.0.0",
+      "$ref": "personen/v3.0.1",
       "activeVersions": {
-        "3.0.0": "personen/v3.0.0"
+        "3.0.1": "personen/v3.0.1"
       }
     },
     {
       "id": "verblijfplaatsen",
-      "$ref": "verblijfplaatsen/v3.0.0",
+      "$ref": "verblijfplaatsen/v3.0.1",
       "activeVersions": {
-        "3.0.0": "verblijfplaatsen/v3.0.0"
+        "3.0.1": "verblijfplaatsen/v3.0.1"
       }
     },
     {
       "id": "verwijzingen",
-      "$ref": "verwijzingen/v3.0.0",
+      "$ref": "verwijzingen/v3.0.1",
       "activeVersions": {
-        "3.0.0": "verwijzingen/v3.0.0"
+        "3.0.1": "verwijzingen/v3.0.1"
       }
     },
     {
       "id": "kiesrechten",
-      "$ref": "kiesrechten/v3.0.0",
+      "$ref": "kiesrechten/v3.0.1",
       "activeVersions": {
-        "3.0.0": "kiesrechten/v3.0.0"
+        "3.0.1": "kiesrechten/v3.0.1"
       }
     },
     {
       "id": "documenten",
-      "$ref": "documenten/v3.0.0",
+      "$ref": "documenten/v3.0.1",
       "activeVersions": {
-        "3.0.0": "documenten/v3.0.0"
+        "3.0.1": "documenten/v3.0.1"
       }
     },
     {
       "id": "onderzoeken",
-      "$ref": "onderzoeken/v3.0.0",
+      "$ref": "onderzoeken/v3.1.0",
       "activeVersions": {
-        "3.0.0": "onderzoeken/v3.0.0"
+        "3.1.0": "onderzoeken/v3.1.0"
       }
     }
   ]
