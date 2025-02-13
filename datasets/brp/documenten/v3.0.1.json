@@ -31,12 +31,6 @@
 				"format": "date",
 				"description": "De datum waarop het geheel van gegevens geldig is geworden. Alleen complete datum"
 			},
-			"eindGeldigheid": {
-				"type": "string",
-				"title": "Object eindgeldigheid datum",
-				"format": "date",
-				"description": "De datum waarop het geheel van gegevens ongeldig is geworden. Alleen complete datum"
-			},
 			"aktenummer": {
 				"type": "string",
 				"title": "Akte nummer",
