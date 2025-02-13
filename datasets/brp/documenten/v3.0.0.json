@@ -22,17 +22,7 @@
       },
       "identificatie": {
         "type": "string",
-        "description": "Nummer in combinatie met de afkorting 'K' of 'P' of 'O' of 'N' of 'OVL'(en eventueel een volgnummer) en 'D'"
-      },
-      "beginGeldigheid": {
-        "type": "string",
-        "format": "date",
-        "description": "complete datum: de datum waarop het geheel van gegevens geldig is geworden."
-      },
-      "eindGeldigheid": {
-        "type": "string",
-        "format": "date",
-        "description": "complete datum: de datum waarop het geheel van gegevens ongeldig is geworden."
+        "description": "Nummer in combinatie met de afkorting 'K' of 'P' of 'O' of 'N' of 'OVL' of 'KR' (en eventueel een volgnummer) en 'D'"
       },
       "aktenummer": {
         "type": "string",
@@ -70,11 +60,16 @@
             "description": "dag van de datum, als deze bekend is."
           }
         },
-      "description": "de datum waarop de ontlening aan of de afleiding uit het document heeft plaatsgevonden."
+        "description": "de datum waarop de ontlening aan of de afleiding uit het document heeft plaatsgevonden."
       },
       "beschrijvingDocument": {
         "type": "string",
         "description": "beschrijving van het document waaraan de gegevens zijn ontleend of waaruit de gegevens zijn afgeleid."
+      },
+      "beginGeldigheid": {
+        "type": "string",
+        "format": "date",
+        "description": "complete datum: de datum waarop het geheel van gegevens geldig is geworden."
       }
     }
   }
