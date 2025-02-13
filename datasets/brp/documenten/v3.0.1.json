@@ -25,12 +25,6 @@
 				"title": "Object ID",
 				"description": "De unieke aanduiding van een gezagsverhouding. Nummer in combinatie met de afkorting van  de objectklasse(en eventueel een volgnummer) en 'D'"
 			},
-			"beginGeldigheid": {
-				"type": "string",
-				"title": "Object geldigheid datum",
-				"format": "date",
-				"description": "De datum waarop het geheel van gegevens geldig is geworden. Alleen complete datum"
-			},
 			"aktenummer": {
 				"type": "string",
 				"title": "Akte nummer",
@@ -77,6 +71,12 @@
 				"type": "string",
 				"title": "Document beschrijving",
 				"description": "Beschrijving van het document waaraan de gegevens zijn ontleend of waaruit de gegevens zijn afgeleid"
+			},
+			"beginGeldigheid": {
+				"type": "string",
+				"title": "Object geldigheid datum",
+				"format": "date",
+				"description": "De datum waarop het geheel van gegevens geldig is geworden. Alleen complete datum"
 			}
 		}
 	}
