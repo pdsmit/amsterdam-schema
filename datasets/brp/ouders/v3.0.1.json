@@ -36,7 +36,7 @@
 			"identificatie": {
 				"type": "string",
 				"title": "Object ID",
-				"description": "De unieke aanduiding van een ouder. Nummer in combinatie met de afkorting 'O' en een volgnummer"
+				"description": "De unieke aanduiding van een ouder. Nummer in combinatie met de afkorting 'O1' of 'O2'"
 			},
 			"volgnummer": {
 				"type": "integer",
@@ -85,7 +85,7 @@
 				},
 				"relation": "brp:personen",
 				"title": "Persoon ID",
-				"description": "De persoon-identificatie van een ouder. Nummer in combinatie met de afkorting 'O' en een volgnummer"
+				"description": "De persoon-identificatie van een ouder. Nummer in combinatie met de afkorting 'O1' of 'O2'"
 			},
 			"datumFamilierechtelijkeBetrekking": {
 				"type": "object",
