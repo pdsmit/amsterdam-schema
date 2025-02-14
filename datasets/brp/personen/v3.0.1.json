@@ -91,7 +91,7 @@
 					}
 				},
 				"title": "Adellijke titel of predikaat",
-				"description": "Adellijke titel/​predicaat, die aangeeft welke titel of welk predicaat behoort tot de naam (bij adellijke titel geslachtsnaam, bij predicaat voornaam)"
+				"description": "Adellijke titel/predicaat, die aangeeft welke titel of welk predicaat behoort tot de naam (bij adellijke titel geslachtsnaam, bij predicaat voornaam)"
 			},
 			"burgerlijkeStaat": {
 				"type": "object",
@@ -111,7 +111,7 @@
 			"geslachtsnaamEchtgenoot": {
 				"type": "string",
 				"title": "Echtgenoot geslachtsnaam",
-				"description": "Afgeleid gegeven: De geslachtsnaam waarvan de eventueel aanwezige voorvoegsels (opent in nieuw venster) (tabel 36) en adellijke titel (Tabel 38) zijn afgesplitst"
+				"description": "Afgeleid gegeven: De geslachtsnaam waarvan de eventueel aanwezige voorvoegsels (tabel 36) en adellijke titel (Tabel 38) zijn afgesplitst"
 			},
 			"voorvoegselsGeslachtsnaamEchtgenoot": {
 				"type": "string",
@@ -131,7 +131,7 @@
 					}
 				},
 				"title": "Geboorte plaats",
-				"description": "Gemeententabel (opent in nieuw venster) op naam of een buitenlandse plaats of een plaatsbepaling, die aangeeft waar de persoon is geboren. Afgeleid uit BRK:Gemeente"
+				"description": "Gemeententabel op naam of een buitenlandse plaats of een plaatsbepaling, die aangeeft waar de persoon is geboren. Afgeleid uit BRK:Gemeente"
 			},
 			"geboorteLand": {
 				"type": "object",
@@ -146,7 +146,7 @@
 					}
 				},
 				"title": "Geboorte land",
-				"description": "Een code, opgenomen in Tabel 34, Landentabel (opent in nieuw venster) op naam, die het land aangeeft waar de persoon is geboren"
+				"description": "Een code, opgenomen in Tabel 34, Landentabel op naam, die het land aangeeft waar de persoon is geboren"
 			},
 			"geboorteDatum": {
 				"type": "object",

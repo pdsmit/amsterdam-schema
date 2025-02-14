@@ -242,7 +242,7 @@
 				},
 				"relation": "brp:documenten",
 				"title": "Document of akte identificatie",
-				"description": "Gemeentedocument of akte van de categorie 01 persoon"
+				"description": "Gemeentedocument of akte van de categorie 12 reisdocument"
 			},
 			"heeftBrpOnderzoek": {
 				"type": "object",
@@ -264,7 +264,7 @@
 				},
 				"relation": "brp:onderzoeken",
 				"title": "Onderzoek identificatie",
-				"description": "Onderzoeken van de categorie 01 persoon"
+				"description": "Onderzoeken van de categorie 12 reisdocument"
 			}
 		}
 	}

@@ -65,7 +65,7 @@
 				"title": "Persoon anummer",
 				"description": "A-nummer van kind"
 			},
-			"naarPersoon": {
+			"naarBrpPersoon": {
 				"type": "object",
 				"properties": {
 					"identificatie": {
