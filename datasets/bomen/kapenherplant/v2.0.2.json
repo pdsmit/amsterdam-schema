@@ -1,0 +1,487 @@
+{
+  "id": "kapenherplant",
+  "type": "table",
+  "version": "2.0.2",
+  "title": "kap en herplant van de bomen",
+  "description": "Het kappen van bomen omvat het verwijderen van bomen uit een gebied. Herplanten van bomen betekent dat nieuwe bomen op de gekapte locatie worden geplant.",
+  "auth": "OPENBAAR",
+  "identifier": "id",
+  "schema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "additionalProperties": false,
+    "mainGeometry": "geometrie",
+    "required": [
+      "schema",
+      "id"
+    ],
+    "display": "id",
+    "properties": {
+      "schema": {
+        "$ref": "https://schemas.data.amsterdam.nl/schema@v2#/definitions/schema"
+      },
+      "id": {
+        "type": "integer",
+        "description": "Unieke aanduiding van record",
+        "title": "Id"
+      },
+      "boomId": {
+        "type": "integer",
+        "description": "de vreemde sleutel (foreignkey) voor de relatie met de stamgegevens van de bomen",
+        "title": "Boom id"
+      },
+      "boomAanwezigheidId": {
+        "type": "integer",
+        "description": "",
+        "title": "Boom aanwezigheid id"
+      },
+      "boomNieuwId": {
+        "type": "integer",
+        "description": "Id nummer van de gekoppelde nieuw geplante boom in beheerlaag boom (boom is geplant en op deze locatie is een nieuwe boom ingelezen)",
+        "title": "Boom nieuw id"
+      },
+      "gbdBuurt": {
+        "type": "string",
+        "relation": "gebieden:buurten",
+        "uri": "https://www.amsterdam.nl/stelselpedia/gebieden-index/catalogus/buurt",
+        "description": "Unieke identificatie van een buurt",
+        "title": "Gbd buurt"
+      },
+      "geometrie": {
+        "$ref": "https://geojson.org/schema/Point.json",
+        "description": "Aanduiding voor de geometrie van het beheerobject volgens het Stelsel van de Rijksdriehoeksmeting (RD, epsg:28992). bevat punt-geometrie.",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Geometrie"
+      },
+      "aantalDagenResterendAfronding": {
+        "type": "string",
+        "description": "Automatisch berekend: aantal werkdagen totdat 'datum afronden voor' is verstreken",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Aantal dagen resterend afronding"
+      },
+      "begindatumTechnischOnderzoek": {
+        "type": "string",
+        "description": "",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Begindatum technisch onderzoek"
+      },
+      "belemmeringHerplant": {
+        "type": "string",
+        "description": "Geeft aan of er belemmeringen zijn voor het aanplanten van een nieuwe boom",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Belemmering herplant"
+      },
+      "bezwaarOpVergunning": {
+        "type": "boolean",
+        "description": "Geeft aan of er bezwaar is gemaakt op de kap van deze boom",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Bezwaar op vergunning"
+      },
+      "bereikbaarheidLeefbaarheidVeiligheidEnCommunicatiePlanNodig": {
+        "type": "string",
+        "description": "Geeft aan of een standaard of specifiek BLVC plan nodig is",
+        "shortname": "blvcPlanNodig",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Bereikbaarheid leefbaarheid veiligheid en communicatie plan nodig"
+      },
+      "boomAanwezigheid": {
+        "type": "string",
+        "description": "Is op locatie van herplant nog de oude boom aanwezig",
+        "title": "Boom aanwezigheid"
+      },
+      "conversieId": {
+        "type": "string",
+        "description": "Tweede oude identificatie",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Conversie id"
+      },
+      "datumAfgerond": {
+        "type": "string",
+        "format": "date",
+        "description": "Datum waarop de kap is afgerond",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Datum afgerond"
+      },
+      "datumDeelopdrachtGroeiplaatsVerstrekt": {
+        "type": "string",
+        "format": "date",
+        "description": "Datum waarop deelopdrachtnummer in gisib is toegekend",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Datum deelopdracht groeiplaats verstrekt"
+      },
+      "datumDeelopdrachtHerplantVerstrekt": {
+        "type": "string",
+        "format": "date",
+        "description": "Datum waarop deelopdrachtnummer in gisib is toegekend",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Datum deelopdracht herplant verstrekt"
+      },
+      "datumDeelopdrachtKapVerstrekt": {
+        "type": "string",
+        "format": "date",
+        "description": "Datum waarop deelopdrachtnummer in gisib is toegekend",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Datum deelopdracht kap verstrekt"
+      },
+      "datumDeelopdrachtVoorschouwVerstrekt": {
+        "type": "string",
+        "format": "date",
+        "description": "Datum waarop deelopdrachtnummer in gisib is toegekend",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Datum deelopdracht voorschouw verstrekt"
+      },
+      "datumEindeBezwaar": {
+        "type": "string",
+        "format": "date",
+        "description": "Wordt later ingevuld",
+        "title": "Eind datum bezwaar"
+      },
+      "datumOpdrachtverlening": {
+        "type": "string",
+        "format": "date",
+        "description": "Wordt later ingevuld",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Datum opdrachtverlening"
+      },
+      "datumVergunningDefinitief": {
+        "type": "string",
+        "format": "date",
+        "description": "Datum waarop de kapvergunning definitief is: zes weken na verlening vergunning",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Datum vergunning definitief"
+      },
+      "datumVergunningVerleend": {
+        "type": "string",
+        "format": "date",
+        "description": "Datum waarop de kapvergunning is verleend",
+        "title": "Datum vergunning verleend"
+      },
+      "datumVergunningsaanvraag": {
+        "type": "string",
+        "format": "date",
+        "description": "Datum waarop de kapvergunning is aangevraagd",
+        "title": "Datum vergunningsaanvraag"
+      },
+      "datumVoorschouw": {
+        "type": "string",
+        "format": "date",
+        "description": "Datum waarop de voorschouw is uitgevoerd",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Datum voorschouw"
+      },
+      "datumHerplantinspectie": {
+        "type": "string",
+        "format": "date",
+        "description": "Datum waarop de herplantinspectie is uitgevoerd",
+        "title": "Datum herplantinspectie"
+      },
+      "deelopdrachtGroeiplaats": {
+        "type": "string",
+        "description": "Deelopdrachtnummer waarbinnen aannemer de werkzaamheden voor groeiplaats inrichten uitvoert",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Deelopdracht groeiplaats"
+      },
+      "deelopdrachtKap": {
+        "type": "string",
+        "description": "Deelopdrachtnummer waarbinnen aannemer de werkzaamheden voor kap uitvoert",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Deelopdracht kap"
+      },
+      "deelopdrachtPlanten": {
+        "type": "string",
+        "description": "Deelopdrachtnummer waarbinnen aannemer de werkzaamheden voor planten uitvoert",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Deelopdracht planten"
+      },
+      "deelopdrachtVoorschouw": {
+        "type": "string",
+        "description": "Deelopdrachtnummer waarbinnen aannemer de werkzaamheden voor voorschouw uitvoert",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Deelopdracht voorschouw"
+      },
+      "dichtstbijzijndeBagAdres": {
+        "type": "string",
+        "description": "Dichtstbijzijnde BAG adres",
+        "title": "Dichtstbijzijnde bag adres"
+      },
+      "dichtstbijzijndeBagPostcode": {
+        "type": "string",
+        "description": "Dichtstbijzijnde BAG postcode",
+        "title": "Dichtstbijzijnde bag postcode"
+      },
+      "ecoscanUitgevoerd": {
+        "type": "string",
+        "description": "Wordt later ingevuld",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Ecoscan uitgevoerd"
+      },
+      "einddatumTechnischOnderzoek": {
+        "type": "string",
+        "format": "date",
+        "description": "Wordt later ingevuld",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Einddatum technisch onderzoek"
+      },
+      "groeiplaatsDatumToezicht": {
+        "type": "string",
+        "format": "date",
+        "description": "Datum waarop toezicht heeft plaatsgevonden",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Groeiplaats datum toezicht"
+      },
+      "groeiplaatsmaatregelDatumUitgevoerd": {
+        "type": "string",
+        "format": "date",
+        "description": "Datum waarop de maatregel is uitgevoerd",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Groeiplaatsmaatregel datum uitgevoerd"
+      },
+      "herplantGewenst": {
+        "type": "string",
+        "description": "Geeft aan of herplant op deze locatie mogelijk of gewenst is",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Herplant gewenst"
+      },
+      "idUitOudebeheerindeling": {
+        "type": "string",
+        "description": "Uniek kenmerk van een beheerobject uit een oude beheerindeling (guid van geovisia)",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.2 1: Bevat persoonlijke beleidsopvattingen (bevat geen milieu-informatie)"
+        ],
+        "title": "Id uit oudebeheerindeling"
+      },
+      "inspectiedatum": {
+        "type": "string",
+        "format": "date",
+        "description": "Tijdstip waarop de inspectie uitgevoerd wordt. Datum wordt automatisch ingevuld",
+        "title": "Inspectiedatum"
+      },
+      "kapDatumToezicht": {
+        "type": "string",
+        "format": "date",
+        "description": "Datum waarop toezicht heeft plaatsgevonden",
+        "title": "Kap datum toezicht"
+      },
+      "kaplijstBomen": {
+        "type": "string",
+        "description": "Naam van de kaplijst (batch te kappen bomen die in opdracht is gegeven door V&OR)",
+        "title": "Kaplijst bomen"
+      },
+      "kapmaatregelDatumUitgevoerd": {
+        "type": "string",
+        "format": "date",
+        "description": "Datum waarop de maatregel is uitgevoerd",
+        "title": "Kapmaatregel datum uitgevoerd"
+      },
+      "mutatiedatum": {
+        "type": "string",
+        "format": "date",
+        "description": "Wordt later ingevuld",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Mutatiedatum"
+      },
+      "objectTypenBibliotheekAanleveringDatumAangeleverd": {
+        "type": "string",
+        "format": "date",
+        "description": "Datum waarop OTL gegevens zijn aangeleverd",
+        "shortname": "otlAanleveringDatumAangeleverd",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Object typen bibliotheek aanlevering datum aangeleverd"
+      },
+      "plantenDatumToezicht": {
+        "type": "string",
+        "format": "date",
+        "description": "Datum waarop toezicht heeft plaatsgevonden",
+        "title": "Planten datum toezicht"
+      },
+      "plantlijstBomen": {
+        "type": "string",
+        "description": "Naam van de plantlijst (batch te planten bomen die in opdracht is gegeven door V&OR)",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Plantlijst bomen"
+      },
+      "plantlocatie": {
+        "type": "string",
+        "description": "Locatie waar de nieuwe boom geplant moet worden",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Plantlocatie"
+      },
+      "plantmaatregelDatumUitgevoerd": {
+        "type": "string",
+        "format": "date",
+        "description": "Datum waarop de maatregel is uitgevoerd",
+        "title": "Plantmaatregel datum uitgevoerd"
+      },
+      "risicotoeslag": {
+        "type": "string",
+        "description": "Wordt later ingevuld",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Risicotoeslag"
+      },
+      "soortnaam": {
+        "type": "string",
+        "description": "Aanduiding voor de soortnaam van het object of van de soorten die binnen het object voorkomen. Het gaat hierbij om zowel flora als fauna.",
+        "title": "Soortnaam"
+      },
+      "stamdiameter": {
+        "type": "string",
+        "description": "Diameter van de stam in cm, opgemeten bij de veiligheidsinspectie van de boom",
+        "title": "Stamdiameter"
+      },
+      "status": {
+        "type": "string",
+        "description": "Wordt later ingevuld",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Status"
+      },
+      "stobbeVerwijderen": {
+        "type": "string",
+        "description": "Wordt later ingevuld",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Stobbe verwijderen"
+      },
+      "termijnurgentie": {
+        "type": "string",
+        "description": "Urgentie die is opgegeven tijdens de veiligheidsinspectie van de boom",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Termijnurgentie"
+      },
+      "toekomstboom": {
+        "type": "string",
+        "description": "Wordt later ingevuld",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Toekomstboom"
+      },
+      "objectbegintijd": {
+        "type": "string",
+        "format": "date",
+        "description": "Wordt later ingevuld",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Objectbegintijd"
+      },
+      "objecteindtijd": {
+        "type": "string",
+        "format": "date",
+        "description": "Wordt later ingevuld",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Objecteindtijd"
+      },
+      "voorschouwDatumToezicht": {
+        "type": "string",
+        "format": "date",
+        "description": "Wordt later ingevuld",
+        "auth": "FP/MDW",
+        "reasonsNonPublic": [
+          "5.1 2d: Zwaarwegend belang: inspectie, controle en toezicht door bestuursorganen"
+        ],
+        "title": "Voorschouw datum toezicht"
+      }
+    }
+  }
+}
