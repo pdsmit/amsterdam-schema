@@ -1,37 +1,36 @@
 {
   "type": "dataset",
-  "id": "duurzaamheid",
-  "title": "Duurzaamheid",
+  "id": "energieverbruikMra",
+  "title": "Verbruiksdata gas en electricteit van de Metropoolregio Amsterdam",
   "status": "beschikbaar",
-  "description": "De energielabel per verblijfsobject van de gemeente Amsterdam.",
+  "description": "Verbruiksdata gas en electricteit van de Metropoolregio Amsterdam.",
   "version": "1.0.0",
-  "dateCreated": "2024-10-29T00:00:00+01:00",
-  "dateModified": "2024-10-29T00:00:00+01:00",
+  "dateCreated": "2025-03-20T00:00:00+01:00",
+  "dateModified": "2025-03-20T00:00:00+01:00",
   "language": "nl",
   "creator": "Datateam Stedelijke Ontwikkeling en Beheer",
   "publisher": {
     "$ref": "publishers/SOEB"
   },
-  "accrualPeriodicity": "maandelijks",
+  "accrualPeriodicity": "kwartaal",
   "spatialDescription": "Gemeente Amsterdam",
   "theme": [
-        "energielabel",
-        "duurzaamheid"
+        "energieverbruik",
+        "teruglevering"
   ],
   "owner": "Gemeente Amsterdam",
   "auth": "OPENBAAR",
   "authorizationGrantor": "datateamSOB@amsterdam.nl",
   "keywords": [
-    "energielabel",
-    "duurzaamheid"
+    "energieverbruik",
+    "teruglevering"
   ],
-  "crs": "EPSG:28992",
   "tables": [
     {
-      "id": "energielabel",
-      "$ref": "energielabel/v1.1.2",
+      "id": "elektriciteitEnGasverbruikLiander",
+      "$ref": "elektriciteitEnGasverbruikLiander/v1.0.0",
       "activeVersions": {
-        "1.1.2": "energielabel/v1.1.2"
+        "1.0.0": "elektriciteitEnGasverbruikLiander/v1.0.0"
       }
     }
   ]
