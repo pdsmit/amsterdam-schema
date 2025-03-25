@@ -1,71 +1,88 @@
 {
-  "id": "klokken",
+  "id": "elektriciteitEnGasverbruikLiander",
   "type": "table",
   "version": "1.0.0",
-  "title": "Klokken",
-  "description": "Gegevens over de storingsmeldingen van de klokken van de Gemeente van Amsterdam. Deze klokken zijn te herkennen aan de 3 rode kruizen.",
+  "title": "Elektriciteit en gasverbruik Liander",
+  "description": "Verbruiksdata gas en electricteit van de Metropoolregio Amsterdam geleverd door Liander.",
   "status": "beschikbaar",
   "schema": {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
     "additionalProperties": false,
-    "identifier": "objectId",
-    "mainGeometry": "geometry",
+    "identifier": "id",
     "required": [
       "schema",
-      "objectId"
+      "id"
     ],
-    "display": "objectId",
+    "display": "id",
     "properties": {
       "schema": {
         "$ref": "https://schemas.data.amsterdam.nl/schema@v2#/definitions/schema"
     },
-    "objectId": {
+    "id": {
       "type": "integer",
-      "description": "Een unieke aanduiding van een openbare verlichting door bron.",
-      "provenance": "objectid"
+      "description": "Unieke aanduiding record.",
+      "provenance": "id"
     },
-    "objecttype": {
-      "type": "string",
-      "description": "Type aanduiding van een openbare verlichting."
-    },
-    "objecttypeOmschrijving": {
-      "type": "string",
-      "description": "Omschrijving van type aanduiding van een openbare verlichting."
-    },
-    "objectnummer": {
-      "type": "string",
-      "description": "Een unieke aanduiding van een openbare verlichting door bron."
-    },
-    "breedtegraad": {
-      "type": "number",
-      "description": "Breedtegraad van een openbare verlichting.",
-      "provenance": "lat"
-    },
-    "lengtegraad": {
-      "type": "number",
-      "description": "Lengtegraad van een openbare verlichting.",
-      "provenance": "lon"
-    },
-    "storingstatus": {
+    "jaar": {
       "type": "integer",
-      "enum": [
-        0,
-        1
-      ],
-      "description": "Indicatie of een storing bekend is van een openbare verlichting. Waarde 1 is storing, waarde 0 geen storing."
+      "description": "Het jaar waarop het verbruik betrekking heeft."
     },
-    "meldingstatus": {
-      "type": "integer",
-      "enum": [
-        0,
-        1
-      ],
-      "description": "Indicatie of een melding is gemaakt op een openbare verlichting. Waarde 1 is melding, waarde 0 geen melding."
+    "jaar_kwartaal": {
+      "type": "string",
+      "description": "Het jaar en kwartaal waarop het verbruik betrekking heeft."
     },
-    "geometry": {
-      "$ref": "https://geojson.org/schema/Geometry.json",
-      "description": "Punt definitie van een openbare verlichting."
+    "jaar_maand": {
+      "type": "string",
+      "description": "Het jaar en de maand waarop het verbruik betrekking heeft."
+    },
+    "product": {
+      "type": "string",
+      "description": "Het product: ELK = elektriciteit, GAS = gas."
+    },
+    "klantsegment": {
+      "type": "string",
+      "description": "Typering van de grootte van de aansluiting: KVB = kleinverbruik, GVB = grootverbruik."
+    },
+    "provincie": {
+      "type": "string",
+      "description": "De provincie waar binnen de aansluitingen zich bevinden."
+    },
+    "Gemeente": {
+      "type": "string",
+      "description": "De gemeente waar binnen de aansluitingen zich bevinden."
+    },
+    "plaats": {
+      "Type": "string",
+      "description": "De plaats waar binnen de aansluitingen zich bevinden."
+    },
+    "wijk_code": {
+      "Type": "string",
+      "description": "Code van de wijk waar binnen de aansluitingen zich bevinden."
+    },
+    "wijk_naam": {
+      "Type": "string",
+      "description": "Naam van de wijk waar binnen de aansluitingen zich bevinden."
+    },
+    "buurt_code": {
+      "Type": "string",
+      "description": "Code van de buurt waar binnen de aansluitingen zich bevinden.."
+    },
+    "buurt_naam": {
+      "Type": "string",
+      "description": "Naam van de buurt waar binnen de aansluitingen zich bevinden."
+    },
+    "levering": {
+      "Type": "integer",
+      "description": "Schatting op basis van historische gegevens van het jaarverbruik in kWh (elektriciteit) of nm3 (gas)."
+    },
+    "teruglevering": {
+      "Type": "integer",
+      "description": "Schatting op basis van historische gegevens van de jaarlijkse teruglevering in kWh (elektriciteit) of nm3 (gas)."
+    },
+    "aantal_aansluitingen": {
+      "Typering": "integer",
+      "description": "Het aantal afleverpunten."
     }
     }
   }
